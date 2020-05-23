@@ -1,0 +1,113 @@
+.navbar-wrapper {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  height: 10vh;
+  background: black;
+}
+.portfolio-title {
+  color: white;
+  font-size: $font-size-title;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  height: 100%;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+
+  li {
+    color: white;
+    font-size: $font-size-large;
+    display: inline-block;
+
+    &:hover {
+      transform: scaleX(1.5);
+      cursor: pointer;
+      font-weight: bold;
+    }
+  }
+  li:after {    
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    margin-top: 10px;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  li:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+}
+
+@media screen and (max-width: $desktop-breakpoint-phone) {
+  .hamburger {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    cursor: pointer;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+  }
+  .nav-links {
+    z-index: 1;
+    text-align: center;
+    display: block;
+    position: fixed;
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    clip-path: circle(100px at 90% -20%);
+    -webkit-clip-path: circle(100px at 90% -20%);
+    transition: all 0.6s ease-out;
+    pointer-events: none;
+
+    li {
+      color: black;
+      display: block;
+      font-size: $font-size-xlarge;
+      font-weight: bold;
+      margin-top: 7rem;
+      opacity: 0;
+    }
+  }
+
+  .nav-links li:nth-child(1) {
+    transition: all 0.5 ease 0.2s;
+  }
+  .nav-links li:nth-child(2) {
+    transition: all 0.5 ease 0.4s;
+  }
+  .nav-links li:nth-child(3) {
+    transition: all 0.5 ease 0.6s;
+  }
+  li.fade{
+    opacity: 1 !important;
+  }
+  .open {
+    -webkit-clip-path: circle(800px at 90% -20%);
+    clip-path: circle(800px at 90% -20%);
+    pointer-events: all;
+  }
+}
+
+.landing {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
