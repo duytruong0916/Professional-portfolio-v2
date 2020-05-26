@@ -10,3 +10,9 @@ body{
     overflow-x: hidden; 
     background-color: black; 
 }
+
+.section-title {
+    font-size: $font-size-xtitle;
+    color: $home-color;
+    font-weight: bolder;
+}

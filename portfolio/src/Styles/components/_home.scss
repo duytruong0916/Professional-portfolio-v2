@@ -1,43 +1,108 @@
 .home-wrapper {
-  height: 90vh;
-  display: flex;
-  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 10rem;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background: linear-gradient(to right top, white 49.5%, transparent 50%);
+  }
 
   .hello-message-1 {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: lighter;
   }
 
   .hello-message-2 {
     font-size: 35px;
     font-weight: lighter;
-
   }
   .hello-message-3 {
-    font-size: 35px; 
-    font-weight: lighter;
-    color: $red;
+    font-size: 35px;
+    font-weight: bolder;
+    color: $home-color;
   }
 
-  @media (max-width: $desktop-breakpoint-phone) { 
+  @media (max-width: $desktop-breakpoint-phone) {
     .hello-message-1 {
-        font-size: 50px;
-        font-weight: lighter;
-      }
-      .hello-message-2 {
-        font-size: $font-size-xlarge;
-        color: white;
-        font-weight: lighter;
-      }
-      .hello-message-3 {
-        font-size: $font-size-xlarge;
-        color: $red;
-        font-weight: lighter;
-      }
-}
+      font-size: 50px;
+      font-weight: lighter;
+    }
+    .hello-message-2 {
+      font-size: $font-size-xlarge;
+      color: white;
+      font-weight: lighter;
+    }
+    .hello-message-3 {
+      font-size: $font-size-xlarge;
+      color: $home-color;
+      font-weight: lighter;
+    }
+  }
 }
 
+.media-wrapper {
+  background-color: black;
+  z-index: 3;
+  position: absolute;
+  top: 25%;
+  right: 3%;
 
+  @media (max-width: $desktop-breakpoint-phone) {
+    top: 8rem;
+    right: 6%;
+  }
+
+  i {
+    margin-top: 2rem;
+    color: $home-color;
+    font-size: $font-size-title;
+    transition: all 0.5s ease;
+    @media (max-width: $desktop-breakpoint-phone) {
+      font-size: $font-size-xlarge;
+    }
+
+    &:hover {
+      color: white;
+      transform: scale(1.5);
+
+      
+    }
+  }
+}
+
+.button-link {
+  display: inline-block;
+  z-index: 2;
+  border: none;
+  color: white;
+  text-align: center;
+  width: 180px;
+  background-color: $home-color;
+  padding: 10px;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: white;
+    color: $home-color;
+    width: 200px;
+    cursor: pointer;
+
+    .rotate-arrow {
+      transform: rotate(90deg) !important;
+      transition: 0.5s;
+    }
+  }
+}
+.link-2 {
+  animation-name: appear;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+}
 
 .hello-message-1 {
   width: 6em;
@@ -61,17 +126,17 @@
   white-space: nowrap;
 }
 
-
 @keyframes appear {
   from {
     opacity: 0;
-    width: 120px;
+    width: 180px;
   }
   to {
     opacity: 1;
     width: 200px;
   }
 }
+
 @keyframes typewriter {
   from {
     width: 0px;
@@ -101,6 +166,7 @@
     border-right: 0px;
   }
   to {
-    border-right: 1px solid transparent;
+    border-right: 1px solid white;
   }
 }
+

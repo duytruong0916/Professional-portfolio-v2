@@ -1,13 +1,14 @@
 .navbar-wrapper {
   position: fixed;
+  height: 7rem;
+  width: 100%;
+  z-index: 999;
   display: flex;
   justify-content: space-between;
-  position: relative;
-  height: 10vh;
-  background: black;
 }
 .portfolio-title {
-  color: white;
+  color: $home-color;
+  font-weight: bolder;
   font-size: $font-size-title;
   align-items: center;
 }
@@ -55,7 +56,7 @@
     right: 5%;
     cursor: pointer;
     transform: translate(-5%, -50%);
-    z-index: 2;
+    z-index: 4;
   }
   .line {
     width: 30px;
@@ -82,32 +83,15 @@
       font-size: $font-size-xlarge;
       font-weight: bold;
       margin-top: 7rem;
-      opacity: 0;
     }
   }
-
-  .nav-links li:nth-child(1) {
-    transition: all 0.5 ease 0.2s;
-  }
-  .nav-links li:nth-child(2) {
-    transition: all 0.5 ease 0.4s;
-  }
-  .nav-links li:nth-child(3) {
-    transition: all 0.5 ease 0.6s;
-  }
-  li.fade{
-    opacity: 1 !important;
-  }
   .open {
-    -webkit-clip-path: circle(800px at 90% -20%);
-    clip-path: circle(800px at 90% -20%);
+    -webkit-clip-path: circle(1000px at 90% -20%);
+    clip-path: circle(1000px at 90% -20%);
     pointer-events: all;
+    @media (max-width: 30rem) {
+      -webkit-clip-path: circle(800px at 90% -20%);
+      clip-path: circle(800px at 90% -20%);
+    }
   }
-}
-
-.landing {
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
