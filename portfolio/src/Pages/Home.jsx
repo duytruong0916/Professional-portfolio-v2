@@ -1,5 +1,6 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
+import Contact from './Contact';
 import About from "./About";
 import Projects from './Projects';
 import { store } from "../Store";
@@ -11,6 +12,7 @@ function Home() {
   const homeRef = React.createRef();
   const aboutRef = React.createRef();
   const projectRef = React.createRef();
+  const contactRef = React.createRef();
   const globalState = React.useContext(store);
 
   React.useEffect(() => {
@@ -25,8 +27,8 @@ function Home() {
       case "projectRef":
         scrollToRef(projectRef);
         break;
-      case "homeRef":
-        scrollToRef(homeRef);
+      case "contactRef":
+        scrollToRef(contactRef);
         break;
       default:
         break;
@@ -35,7 +37,7 @@ function Home() {
   }, [globalState.state]);
 
   const scrollToRef = (ref) => ref.current.scrollIntoView({ behavior: "smooth" });
-
+  
   const renderMedia = () => (
     <div className="media-wrapper">
       <div className="ml-md-5 git">
@@ -104,7 +106,10 @@ function Home() {
         <div data-aos="flip-up"><About /></div>
       </div>
       <div ref={projectRef} className="bg-white">
-        <div data-aos="flip-left"><Projects /></div>
+        <div data-aos="fade"><Projects /></div>
+      </div>
+      <div ref={contactRef} className="bg-white">
+        <div data-aos="zoom-in"><Contact/></div>
       </div>
     </div>
   );

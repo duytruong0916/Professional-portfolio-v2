@@ -12,7 +12,7 @@ import Ulti_image from '../assets/authenticate/img2.png'
 import Ex_image from '../assets/budget-app/two.png'
 import portfolio_image from '../assets/portfolio/po1.png'
 import secret_image from '../assets/images/pic4.png'
-
+import timefox_image from '../assets/timefoxwatch/im1.png'
 
 function Projects() {
     AOS.init({ duration: 700, delay: 100 });
@@ -24,13 +24,14 @@ function Projects() {
     const projects =
         [
             { name: 'AnguBetta store', type: 'Angular', tech: 'Angular / NodeJS / MongoDB', photo: `${Angubetta_image}`, link: '/projects/angubetta' },
-            { name: 'ScrumStubs.com', type: 'ReactJS', tech: 'React / Python / Django', photo: Scrumstubs_iamge },
-            { name: 'Aleph-techonologies.com', type: 'ReactJS', tech: 'React / Bootstrap / JavaScripts', photo: `${Aleph_image}` },
-            { name: 'Epics Team Builder', type: 'ReactJS', tech: 'React / Redux / Bootstrap', photo: `${epic_image}` },
-            { name: 'Ultimate Authentication', type: 'ReactJS', tech: 'React / NodeJS / MongoDB', photo: `${Ulti_image}` },
-            { name: 'Expensify App', type: 'ReactJS', tech: 'React / Firebase / Bootstrap', photo: `${Ex_image}` },
-            { name: 'My Portfolio', type: 'Angular', tech: 'Angular / Angular Material / Bootstrap', photo: `${portfolio_image}` },
-            { name: 'Secret Storage', type: 'Angular', tech: 'Angular / NodeJS / ExpressJS', photo: `${secret_image}` },
+            { name: 'ScrumStubs.com', type: 'ReactJS', tech: 'React / Python / Django', photo: Scrumstubs_iamge, link: '/projects/scrumstub' },
+            { name: 'Aleph-techonologies.com', type: 'ReactJS', tech: 'React / Bootstrap / JavaScripts', photo: `${Aleph_image}`,link:'/projects/aleph' },
+            { name: 'Epics Team Builder', type: 'ReactJS', tech: 'React / Redux / Bootstrap', photo: `${epic_image}`,link:'/projects/epics'},
+            { name: 'Ultimate Authentication', type: 'ReactJS', tech: 'React / NodeJS / MongoDB', photo: `${Ulti_image}`,link:'/projects/ultimate' },
+            { name: 'Expensify App', type: 'ReactJS', tech: 'React / Firebase / Bootstrap', photo: `${Ex_image}`, link:'/projects/banking'},
+            { name: 'My Portfolio', type: 'Angular', tech: 'Angular / Angular Material / Bootstrap', photo: `${portfolio_image}`,link: '/projects/portfolio'},
+            { name: 'Secret Storage', type: 'Angular', tech: 'Angular / NodeJS / ExpressJS', photo: `${secret_image}`, link: '/projects/secret' },
+            { name: 'Timefoxwatch.com', type: 'ReactJS', tech: 'ReactJS / Redux / NodeJS', photo: `${timefox_image}`,link:'/projects/timefoxwatch'},
         ]
     const [filterdProjects, setFilteredProjects] = React.useState([]);
 
@@ -87,18 +88,13 @@ function Projects() {
     )
 
     return (
-        <div className="project-wrapper d-flex align-items-center p-md-5 p-3">
+        <div className="project-wrapper d-flex align-items-center p-md-5 p-3 py-5">
             <div className="w-100">
                 <div className="my-4 font-weight-bold about-list text-center" data-aos="slide-left">
                     <span className="text-white">See my works below. Unless explicitly stated otherwise, </span>
                     <span>all their back-end and front-end parts were completely done by me</span>
                 </div>
                 <div className="section-title p-3">Projects</div>
-                {/* <div className="lines d-md-block d-none">
-                    <div className="line"></div>
-                    <div className="line"></div>
-                    <div className="line"></div>
-                </div> */}
                 {renderOption()}
                 {renderProjects()}
             </div>

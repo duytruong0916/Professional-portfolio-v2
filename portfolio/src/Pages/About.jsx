@@ -220,11 +220,11 @@ function About(props) {
   return (
     <div className="about-wrapper d-flex align-items-center p-md-5 p-3 mb-md-5">
       <div>
-        <div className="my-4 font-weight-bold about-list text-center text-danger" data-aos="slide-left">
+        <div className="my-4 quote" data-aos="slide-left">
           Let's make something special. 
         </div>
         <div className="section-title p-3">About me</div>
-        <Row>
+        <Row className="content-wrapper">
           <Col xs={12} xl={7}>
             {renderProfile()}
             {renderOffer()}

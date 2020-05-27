@@ -38,7 +38,6 @@ function Navbar(props) {
           <li onClick={() => ontoggleHanle("aboutRef")}>ABOUT</li>
           <li onClick={() => ontoggleHanle("projectRef")}>PROJECTS</li>
           <li onClick={() => ontoggleHanle("contactRef")}>CONTACT</li>
-          {/* <li onClick={() => ontoggleHanle("")}><a href="../assets/files/resume.pdf" download className="text-decoration-none">RESUME</a></li> */}
         </ul>
       </div>
     </>

@@ -1,0 +1,91 @@
+.project-details-wrapper {
+  width: 70%;
+  margin: 5rem auto;
+  background-color: white;
+  min-height: 100vh;
+  @media (max-width: $desktop-breakpoint-phone) {
+    margin: 10rem auto;
+    width: 95%;
+  }
+}
+
+.project-title {
+  text-align: center;
+  font-size: $font-size-title;
+  color: $home-color;
+  font-weight: bolder;
+  @media (max-width: $desktop-breakpoint-phone) {
+    font-size: $font-size-xlarge;
+  }
+}
+
+.project-tech-title {
+  font-size: $font-size-large;
+  color: $home-color;
+  font-weight: bold;
+  @media (max-width: $desktop-breakpoint-phone) {
+    font-size: $font-size-large;
+  }
+}
+
+.tech-list li {
+  font-size: $font-size-medium;
+  color: black;
+  font-weight: bold;
+}
+
+.project-summary {
+  font-size: $font-size-medium;
+  color: $home-color;
+  font-weight: bold;
+}
+
+.project-description {
+  font-size: $font-size-medium;
+}
+
+.button-tech {
+    outline: none !important;
+    font-size: $font-size-medium;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    padding: 0.5rem 2rem;
+
+    &:hover {
+        color:black;
+        background-color: white;
+        border: 1px solid black;
+    }
+}
+
+.go-back-button {
+    position: absolute;
+    font-weight: bold;
+    top: 2rem;
+    left: 2rem;
+    color: $home-color;
+    font-size: $font-size-title;
+
+    &:hover {
+        color: $home-color;
+        text-decoration: none;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+}
+
+.go-top-button{
+  border: none;
+  font-weight: bold;
+  background-color: $home-color;
+  bottom: 2rem;
+  color: white;
+  padding: 0.5rem 2rem;
+
+  &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+  }
+}
