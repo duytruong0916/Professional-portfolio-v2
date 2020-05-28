@@ -87,6 +87,7 @@ function Aleph() {
   return (
     <ProjectDetails
       title={title}
+      onlineLink="https://aleph-technologies.com/"
       summary={summary}
       description={description}
       techsDescription={techsDescription}

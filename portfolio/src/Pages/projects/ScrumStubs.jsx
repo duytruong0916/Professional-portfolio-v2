@@ -82,6 +82,7 @@ function Scrumstub() {
   return (
     <ProjectDetails
       title={title}
+      onlineLink="https://scrumstubs.com/"
       summary={summary}
       description={description}
       techsDescription={techsDescription}

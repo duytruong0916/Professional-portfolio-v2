@@ -54,6 +54,7 @@ function Secret() {
   return (
     <ProjectDetails
       title={title}
+      onlineLink="http://yoursecretstorage.com/home"
       summary={summary}
       description={description}
       techsDescription={techsDescription}

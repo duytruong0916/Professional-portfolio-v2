@@ -53,6 +53,7 @@ function Portfolio() {
     return (
         <ProjectDetails
             title={title}
+            onlineLink= "http://newportfoliodnt.s3-website.us-east-2.amazonaws.com/"
             summary={summary}
             description={description}
             techsDescription={techsDescription}

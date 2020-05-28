@@ -83,6 +83,7 @@ function Timefox() {
   return (
     <ProjectDetails
       title={title}
+      onlineLink= "http://timefoxwatch.com/"
       summary={summary}
       description={description}
       techsDescription={techsDescription}

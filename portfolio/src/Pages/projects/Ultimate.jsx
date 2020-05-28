@@ -48,6 +48,7 @@ function Ultimate() {
   return (
     <ProjectDetails
       title={title}
+      onlineLink="http://ultimate-authentication.s3-website-us-east-1.amazonaws.com/"
       summary={summary}
       description={description}
       techsDescription={techsDescription}

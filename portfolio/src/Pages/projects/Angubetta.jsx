@@ -55,6 +55,7 @@ function Angubetta() {
     return (
         <ProjectDetails
             title={title}
+            onlineLink="http://angubetta-app.s3-website.us-east-2.amazonaws.com/home"
             summary={summary}
             description={description}
             techsDescription={techsDescription}
