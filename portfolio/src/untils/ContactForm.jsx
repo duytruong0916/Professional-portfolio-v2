@@ -26,45 +26,43 @@ function ContactForm() {
     };
 
     return (
-        <div className="form-wrapper">
-            <Form onSubmit={onSubmitHandle} onBlur={()=> setInfo({...info, success: ''})}>
-                <Form.Group controlId="email">
-                    <Form.Control
-                        type="email"
-                        placeholder="Enter your email"
-                        size="lg"
-                        required={true}
-                        onChange={onChangeHandle("email")}
-                    />
-                </Form.Group>
-                <Form.Group controlId="name">
-                    <Form.Control
-                        type="text"
-                        placeholder="Enter your full name"
-                        size="lg"
-                        required={true}
-                        onChange={onChangeHandle("name")}
-                    />
-                </Form.Group>
-                <Form.Group controlId="message">
-                    <Form.Control
-                        value={info.message}
-                        as="textarea"
-                        placeholder="message"
-                        rows={5}
-                        size="lg"
-                        onChange={onChangeHandle("message")}
-                        required={true}
-                    />
-                </Form.Group>
-                {info.success !== '' && <div className="text-warning">{info.success}</div>}
-                <div className="text-center my-4">
-                    <button className="button-tech mx-2 my-2" type="submit">
-                        Submit
+        <Form onSubmit={onSubmitHandle} onBlur={() => setInfo({ ...info, success: '' })}>
+            <Form.Group controlId="email">
+                <Form.Control
+                    type="email"
+                    placeholder="Enter your email"
+                    size="lg"
+                    required={true}
+                    onChange={onChangeHandle("email")}
+                />
+            </Form.Group>
+            <Form.Group controlId="name">
+                <Form.Control
+                    type="text"
+                    placeholder="Enter your full name"
+                    size="lg"
+                    required={true}
+                    onChange={onChangeHandle("name")}
+                />
+            </Form.Group>
+            <Form.Group controlId="message">
+                <Form.Control
+                    value={info.message}
+                    as="textarea"
+                    placeholder="message"
+                    rows={5}
+                    size="lg"
+                    onChange={onChangeHandle("message")}
+                    required={true}
+                />
+            </Form.Group>
+            {info.success !== '' && <div className="text-warning">{info.success}</div>}
+            <div className="text-center my-4">
+                <button className="button-tech mx-2 my-2" type="submit">
+                    Submit
                      </button>
-                </div>
-            </Form>
-        </div>
+            </div>
+        </Form>
     );
 }
 

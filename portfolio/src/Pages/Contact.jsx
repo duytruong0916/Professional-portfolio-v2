@@ -42,7 +42,7 @@ function Contact(props) {
     return (
         <div className="contact-wrapper p-3 px-md-5 py-5"> 
             <Row>
-                <Col xs={12} lg={4}>
+                <Col xs={12} lg={3}>
                 <div className="section-title px-3">Contact</div>
                 <div className="font-weight-bold px-3">Phone: 214-235-5014</div>
                 <div className="font-weight-bold px-3">Email: duytruong169@gmail.com</div>
@@ -50,11 +50,13 @@ function Contact(props) {
                     <a href={resume} target="_blank" className="quote text-decoration-none">My RESUME</a>
                 </div>
                 </Col>
-                <Col xs={12} lg={5} className="mt-md-0 mt-5">
+                <Col xs={12} lg={6} className="mt-md-0 mt-5">
                 <div className="quote text-left my-4" data-aos="slide-left">
                     I am available for hire and open to any ideas of cooperation.
                 </div>
-                    <ContactForm />
+                <div className="overflow-hidden px-4">
+                      <ContactForm />
+                </div>
                 </Col>
                 <Col xs={12} lg={3}>
                      {renderMedia()}
