@@ -27,3 +27,12 @@
 .fa-angle-double-right{
     transform: rotate(270deg);
 }
+
+.form-wrapper {
+  margin: auto;
+  width: 100%;
+  @media (max-width: $desktop-breakpoint-phone) {
+    width: 95%;
+  }
+
+}

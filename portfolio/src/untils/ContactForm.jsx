@@ -1,0 +1,71 @@
+import React from "react";
+import emailjs from "emailjs-com";
+import { Form } from "react-bootstrap";
+
+function ContactForm() {
+    const [info, setInfo] = React.useState({
+        email: "",
+        name: "",
+        message: "",
+        success: "",
+    });
+
+    const onChangeHandle = (name) => (e) => {
+        setInfo({ ...info, [name]: e.target.value });
+    };
+
+    const onSubmitHandle = e => {
+        e.preventDefault();
+        emailjs.send('gmail', 'template_OHwwiBj6', { message_html: info.message, from_name: info.name, reply_to: info.email }, 'user_P4v38BJf3W7sZ7HDTyKCZ')
+            .then((result) => {
+                console.log(result.text);
+                setInfo({ email: '', name: '', message: '', success: 'You message was successfully sent. Thanks!' });
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
+
+    return (
+        <div className="form-wrapper">
+            <Form onSubmit={onSubmitHandle} onBlur={()=> setInfo({...info, success: ''})}>
+                <Form.Group controlId="email">
+                    <Form.Control
+                        type="email"
+                        placeholder="Enter your email"
+                        size="lg"
+                        required={true}
+                        onChange={onChangeHandle("email")}
+                    />
+                </Form.Group>
+                <Form.Group controlId="name">
+                    <Form.Control
+                        type="text"
+                        placeholder="Enter your full name"
+                        size="lg"
+                        required={true}
+                        onChange={onChangeHandle("name")}
+                    />
+                </Form.Group>
+                <Form.Group controlId="message">
+                    <Form.Control
+                        value={info.message}
+                        as="textarea"
+                        placeholder="message"
+                        rows={5}
+                        size="lg"
+                        onChange={onChangeHandle("message")}
+                        required={true}
+                    />
+                </Form.Group>
+                {info.success !== '' && <div className="text-warning">{info.success}</div>}
+                <div className="text-center my-4">
+                    <button className="button-tech mx-2 my-2" type="submit">
+                        Submit
+                     </button>
+                </div>
+            </Form>
+        </div>
+    );
+}
+
+export default ContactForm;
