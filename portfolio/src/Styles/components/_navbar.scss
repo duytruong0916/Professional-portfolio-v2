@@ -28,6 +28,7 @@
     display: inline-block;
 
     &:hover {
+      color: $home-color;
       transform: scaleX(1.5);
       cursor: pointer;
       font-weight: bold;
@@ -39,7 +40,7 @@
     height: 2px;
     left: 50%;
     margin-top: 10px;
-    background: #fff;
+    background: $home-color;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
   }

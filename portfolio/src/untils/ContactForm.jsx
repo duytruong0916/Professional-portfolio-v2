@@ -30,6 +30,7 @@ function ContactForm() {
             <Form.Group controlId="email">
                 <Form.Control
                     type="email"
+                    value={info.email}
                     placeholder="Enter your email"
                     size="lg"
                     required={true}
@@ -38,6 +39,7 @@ function ContactForm() {
             </Form.Group>
             <Form.Group controlId="name">
                 <Form.Control
+                    value={info.name}
                     type="text"
                     placeholder="Enter your full name"
                     size="lg"
