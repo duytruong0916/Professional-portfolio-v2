@@ -10,7 +10,7 @@ function ProjectDetails(props) {
 
     return (
         <>
-            <div><Link to="/" className="go-back-button">Projects</Link></div>
+            <div className="go-back-button"><Link to="/" className="go-top-button py-3 px-5">Go Back</Link></div>
             <div className="project-details-wrapper p-md-5 p-3" ref={topRef}>
                 <div className="project-title my-3">{props.title}</div>
                 <div className="p-md-5 p-2">

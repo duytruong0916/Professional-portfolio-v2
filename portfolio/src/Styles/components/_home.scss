@@ -106,22 +106,22 @@
 
 .hello-message-1 {
   width: 6em;
-  -webkit-animation: blinktextcurser 1s steps(50) 2 normal,
-    typewriter 1.5s steps(30) 0.5s 1 normal both;
+  -webkit-animation: blinktextcurser 0.5s steps(50) 2 normal,
+    typewriter 0.5s steps(30) 0.5s 1 normal both;
   overflow: hidden;
   white-space: nowrap;
 }
 .hello-message-2 {
   width: 16em;
-  -webkit-animation: blinktextcurser 1s steps(50) 2 2s normal,
-    typewriter2 2s steps(30) 2s 1 normal both;
+  -webkit-animation: blinktextcurser 0.5s steps(50) 2 1s normal,
+    typewriter2 1s steps(30) 1s 1 normal both;
   overflow: hidden;
   white-space: nowrap;
 }
 .hello-message-3 {
   width: 12em;
-  -webkit-animation: blinktextcurser 1s steps(50) infinite 4s normal,
-    typewriter3 2s steps(30) 4s 1 normal both;
+  -webkit-animation: blinktextcurser 0.5s steps(50) infinite 2s normal,
+    typewriter3 1s steps(30) 2s 1 normal both;
   overflow: hidden;
   white-space: nowrap;
 }

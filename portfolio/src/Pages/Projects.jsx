@@ -15,7 +15,7 @@ import secret_image from '../assets/images/pic4.png'
 import timefox_image from '../assets/timefoxwatch/im1.png'
 
 function Projects() {
-    AOS.init({ duration: 700, delay: 100 });
+    AOS.init({ duration: 400, delay: 50 });
     const [options, setOptions] = React.useState([
         { name: 'All', active: true },
         { name: 'ReactJS', active: false },

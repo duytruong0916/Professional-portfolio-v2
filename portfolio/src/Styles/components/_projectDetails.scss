@@ -85,6 +85,8 @@
   padding: 0.5rem 2rem;
 
   &:hover {
+    text-decoration: none;
+    color: white;
       cursor: pointer;
       transform: scale(1.1);
   }

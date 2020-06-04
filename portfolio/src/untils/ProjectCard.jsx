@@ -4,7 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 function Card(props) {
-    AOS.init({ duration: 700, delay: 100 });
+    AOS.init({ duration: 300, delay: 50 });
     return (
         <div className="card p-4" style={{ backgroundImage: `url(${props.project.photo})` }} data-aos='zoom-out'>
             <div className="card-content" style={{}}>
