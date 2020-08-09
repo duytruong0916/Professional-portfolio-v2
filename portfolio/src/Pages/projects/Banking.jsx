@@ -27,7 +27,7 @@ function Banking() {
       Single-page Application written in React
     </>,
     <>
-     Firebase back-end services, including authentication, database and API.
+      Firebase back-end services, including authentication, database and API.
     </>,
     <>Responsive web application rendering well on a variety of devices and window or screen sizes.</>,
     <>Redux for state management.</>,

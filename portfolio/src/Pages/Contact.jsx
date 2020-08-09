@@ -46,9 +46,9 @@ function Contact(props) {
                 <div className="section-title px-3">Contact</div>
                 <div className="font-weight-bold px-3">Phone: 214-235-5014</div>
                 <div className="font-weight-bold px-3">Email: duytruong169@gmail.com</div>
-                <div className="text-left px-3 mt-3">
+                {/* <div className="text-left px-3 mt-3">
                     <a href={resume} target="_blank" className="quote text-decoration-none">My RESUME</a>
-                </div>
+                </div> */}
                 </Col>
                 <Col xs={12} lg={6} className="mt-md-0 mt-5">
                 <div className="quote text-left my-4" data-aos="slide-left">

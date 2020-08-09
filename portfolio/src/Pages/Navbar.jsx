@@ -8,7 +8,7 @@ function Navbar(props) {
   const navRef = React.useRef();
   navRef.current = navBackground;
 
-  React.useEffect(() => {
+  React.useLayoutEffect(() => {
     const handleScroll = () => {
       const show = window.scrollY > 0;
       if (navRef.current !== show) {

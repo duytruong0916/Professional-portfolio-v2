@@ -57,7 +57,7 @@ function Epics() {
   return (
     <ProjectDetails
       title={title}
-      onlineLink ="http://epics-team-builder.s3-website-us-east-1.amazonaws.com/"
+      onlineLink="http://epics-team-builder.s3-website-us-east-1.amazonaws.com/"
       summary={summary}
       description={description}
       techsDescription={techsDescription}

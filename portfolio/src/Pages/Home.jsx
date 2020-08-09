@@ -8,12 +8,13 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Navbar from './Navbar';
 import profile from '../assets/profile.png';
+import Timer from '../untils/timer';
 
 function Home() {
-  const homeRef = React.createRef();
-  const aboutRef = React.createRef();
-  const projectRef = React.createRef();
-  const contactRef = React.createRef();
+  const homeRef = React.useRef();
+  const aboutRef = React.useRef();
+  const projectRef = React.useRef();
+  const contactRef = React.useRef();
   const globalState = React.useContext(store);
 
   React.useEffect(() => {
@@ -110,6 +111,7 @@ function Home() {
       {renderMedia()}
       <Navbar />
       <div className="home-wrapper d-flex align-items-center" ref={homeRef}>
+        <Timer />
         {renderHome()}
       </div>
       <div ref={aboutRef} style={{ background: 'black' }}>
