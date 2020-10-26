@@ -1,0 +1,114 @@
+.home-wrapper {
+  .hello-message-1 {
+    font-size: 50px;
+    font-weight: lighter;
+  }
+  .hello-message-2 {
+    font-size: 35px;
+    font-weight: lighter;
+  }
+  .hello-message-3 {
+    font-size: 35px;
+    font-weight: bolder;
+    color: $home-color;
+  }
+
+  @media (max-width: $desktop-breakpoint-phone) {
+    .hello-message-1 {
+      font-size: 50px;
+      font-weight: lighter;
+    }
+    .hello-message-2 {
+      font-size: $font-size-xlarge;
+      color: white;
+      font-weight: lighter;
+    }
+    .hello-message-3 {
+      font-size: $font-size-xlarge;
+      color: $home-color;
+      font-weight: lighter;
+    }
+  }
+}
+
+.media-wrapper {
+  z-index: 3;
+  position: absolute;
+  top: 25%;
+  right: 3%;
+
+  @media (max-width: $desktop-breakpoint-phone) {
+    top: 8rem;
+    right: 6%;
+  }
+
+  i {
+    margin-top: 2rem;
+    color: $text-color-2;
+    font-size: $font-size-title;
+    transition: all 0.5s ease;
+    @media (max-width: $desktop-breakpoint-phone) {
+      font-size: $font-size-xlarge;
+    }
+
+    &:hover {
+      color: $home-color;
+      transform: scale(1.2) translateX(-5px);
+    }
+  }
+}
+
+.hello-message-1 {
+  width: 6em;
+  animation: blinktextcurser 0.5s steps(50) 2 normal,
+    typewriter 0.5s steps(30) 0.5s 1 normal both;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.hello-message-2 {
+  width: 16em;
+  animation: blinktextcurser 0.5s steps(50) 2 1s normal,
+    typewriter2 1s steps(30) 1s 1 normal both;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.hello-message-3 {
+  width: 12em;
+  animation: blinktextcurser 0.5s steps(50) infinite 2s normal,
+    typewriter3 1s steps(30) 2s 1 normal both;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 6em;
+  }
+}
+@keyframes typewriter2 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 15em;
+  }
+}
+@keyframes typewriter3 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 12em;
+  }
+}
+@keyframes blinktextcurser {
+  from {
+    border-right: 0px;
+  }
+  to {
+    border-right: 1px solid white;
+  }
+}

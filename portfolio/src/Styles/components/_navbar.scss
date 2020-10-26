@@ -1,10 +1,21 @@
 .navbar-wrapper {
-  position: fixed;
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  margin-left: -50vw;
   height: 7rem;
-  width: 100%;
   z-index: 999;
   display: flex;
+  position: fixed;
   justify-content: space-between;
+}
+.nav-scroll {
+  background-color: rgba($color: $back-ground-1, $alpha: 0.9);
+  .nav-links {
+    li {
+      color: white;
+    }
+  }
 }
 .portfolio-title {
   color: $home-color;
@@ -17,25 +28,51 @@
   display: flex;
   list-style: none;
   height: 100%;
-  width: 50%;
+  width: 80%;
   justify-content: space-around;
   align-items: center;
   margin-left: auto;
-
-  li {
-    color: white;
-    font-size: $font-size-large;
-    display: inline-block;
-
-    &:hover {
+  font-family: $font-title;
+  @media (min-width: $desktop-breakpoint-laptop) {
+    width: 60%;
+  }
+  @media (min-width: $desktop-breakpoint-biglaptop) {
+    width: 45%;
+  }
+  li.resume {
+    margin-top: 40px;
+    a {
+      padding: 10px 20px;
+      border: 1px solid $home-color;
       color: $home-color;
-      transform: scaleX(1.5);
-      cursor: pointer;
-      font-weight: bold;
+      text-decoration: none;
+      &:hover {
+        background-color: rgba($color: #ffffff, $alpha: 0.2);
+      }
     }
   }
-  li:after {    
-    content: "";
+  li {
+    color: $text-color-1;
+    font-size: $font-size-small;
+    display: inline-block;
+    font-weight: 600;
+    &:hover {
+      color: $home-color;
+      cursor: pointer;
+      .special {
+        transform: scale(1.2);
+      }
+    }
+    .special {
+      display: inline-block;
+      color: $home-color;
+      margin-right: 1rem;
+      font-weight: 700;
+      transition: all 0.2s ease;
+    }
+  }
+  li:after {
+    content: '';
     display: block;
     height: 2px;
     // left: 50%;
@@ -44,42 +81,82 @@
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
   }
-  li:hover:after { 
-    width: 100%; 
-    // left: 0; 
+  li:hover:after {
+    width: 100%;
+    // left: 0;
   }
 }
 
 @media screen and (max-width: $desktop-breakpoint-phone) {
   .hamburger {
     position: absolute;
-    top: 50%;
+    top: 20px;
     right: 5%;
     cursor: pointer;
-    transform: translate(-5%, -50%);
-    z-index: 4;
+    transition: 0.25s ease-in-out;
+    cursor: pointer;
+    .line {
+      display: block;
+      position: absolute;
+      height: 5px;
+      border-radius: 2px;
+      background-color: $home-color;
+      border-radius: 9px;
+      opacity: 1;
+      right: 20px;
+      transform: rotate(0deg);
+      transition: all 0.25s ease-in-out;
+
+      &:nth-child(1) {
+        top: 10px;
+        width: 50px;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        top: 19px;
+        width: 40px;
+      }
+
+      &:nth-child(4) {
+        top: 28px;
+        width: 30px;
+      }
+    }
+
+    &.toggle .line {
+      &:nth-child(1) {
+        opacity: 0;
+      }
+
+      &:nth-child(2) {
+        transform: rotate(45deg);
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+      }
+
+      &:nth-child(4) {
+        opacity: 0;
+      }
+    }
   }
-  .line {
-    width: 30px;
-    height: 3px;
-    background-color: white;
-    margin: 5px;
-  }
+
   .nav-links {
     z-index: 1;
-    text-align: center;
     display: block;
     position: fixed;
-    background-color: white;
+    background-color: $back-ground-1;
     height: 100vh;
     width: 100%;
     clip-path: circle(100px at 90% -20%);
     -webkit-clip-path: circle(100px at 90% -20%);
-    transition: all 0.6s ease-out;
+    transition: all 0.3s ease-out;
     pointer-events: none;
 
     li {
-      color: black;
+      color: $text-color-1;
       display: block;
       font-size: $font-size-xlarge;
       font-weight: bold;
@@ -92,7 +169,7 @@
     pointer-events: all;
     @media (max-width: 30rem) {
       -webkit-clip-path: circle(700px at 90% -20%);
-      clip-path: circle(700px at 90% -20%);
+      clip-path: circle(850px at 90% -20%);
     }
   }
 }

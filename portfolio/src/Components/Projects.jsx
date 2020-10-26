@@ -1,8 +1,5 @@
 import React from "react";
-import { useSpring, animated as a } from 'react-spring'
 import { Row, Col } from "react-bootstrap";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import Card from '../untils/ProjectCard';
 import Angubetta_image from '../assets/angubetta/profile.jpg';
 import Scrumstubs_iamge from '../assets/scrumstub/pic1.png'
@@ -15,7 +12,6 @@ import secret_image from '../assets/images/pic4.png'
 import timefox_image from '../assets/timefoxwatch/im1.png'
 
 function Projects() {
-    AOS.init({ duration: 400, delay: 50 });
     const [options, setOptions] = React.useState([
         { name: 'All', active: true },
         { name: 'ReactJS', active: false },
@@ -25,13 +21,13 @@ function Projects() {
         [
             { name: 'AnguBetta store', type: 'Angular', tech: 'Angular / NodeJS / MongoDB', photo: `${Angubetta_image}`, link: '/projects/angubetta' },
             { name: 'ScrumStubs.com', type: 'ReactJS', tech: 'React / Python / Django', photo: Scrumstubs_iamge, link: '/projects/scrumstub' },
-            { name: 'Aleph-techonologies.com', type: 'ReactJS', tech: 'React / Bootstrap / JavaScripts', photo: `${Aleph_image}`,link:'/projects/aleph' },
-            { name: 'Epics Team Builder', type: 'ReactJS', tech: 'React / Redux / Bootstrap', photo: `${epic_image}`,link:'/projects/epics'},
-            { name: 'Ultimate Authentication', type: 'ReactJS', tech: 'React / NodeJS / MongoDB', photo: `${Ulti_image}`,link:'/projects/ultimate' },
-            { name: 'Expensify App', type: 'ReactJS', tech: 'React / Firebase / Bootstrap', photo: `${Ex_image}`, link:'/projects/banking'},
-            { name: 'My Portfolio', type: 'Angular', tech: 'Angular / Angular Material / Bootstrap', photo: `${portfolio_image}`,link: '/projects/portfolio'},
+            { name: 'Aleph-techonologies.com', type: 'ReactJS', tech: 'React / Bootstrap / JavaScripts', photo: `${Aleph_image}`, link: '/projects/aleph' },
+            { name: 'Epics Team Builder', type: 'ReactJS', tech: 'React / Redux / Bootstrap', photo: `${epic_image}`, link: '/projects/epics' },
+            { name: 'Ultimate Authentication', type: 'ReactJS', tech: 'React / NodeJS / MongoDB', photo: `${Ulti_image}`, link: '/projects/ultimate' },
+            { name: 'Expensify App', type: 'ReactJS', tech: 'React / Firebase / Bootstrap', photo: `${Ex_image}`, link: '/projects/banking' },
+            { name: 'My Portfolio', type: 'Angular', tech: 'Angular / Angular Material / Bootstrap', photo: `${portfolio_image}`, link: '/projects/portfolio' },
             { name: 'Secret Storage', type: 'Angular', tech: 'Angular / NodeJS / ExpressJS', photo: `${secret_image}`, link: '/projects/secret' },
-            { name: 'Timefoxwatch.com', type: 'ReactJS', tech: 'ReactJS / Redux / NodeJS', photo: `${timefox_image}`,link:'/projects/timefoxwatch'},
+            { name: 'Timefoxwatch.com', type: 'ReactJS', tech: 'ReactJS / Redux / NodeJS', photo: `${timefox_image}`, link: '/projects/timefoxwatch' },
         ]
     const [filterdProjects, setFilteredProjects] = React.useState([]);
 

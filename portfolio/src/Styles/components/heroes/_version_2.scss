@@ -1,0 +1,92 @@
+.banner {
+  position: relative;
+  width: 100%;
+  padding-right: 30px;
+  @media (min-width: $desktop-breakpoint-phone) {
+  }
+  @media (min-width: $desktop-breakpoint-laptop) {
+    max-width: 800px;
+    margin-top: 150px;
+  }
+  @media (min-width: $desktop-breakpoint-biglaptop) {
+    max-width: 1200px;
+    margin-top: 170px;
+  }
+  .special {
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    font-size: $font-size-large;
+    font-weight: bold;
+  }
+  .title,
+  .light-title {
+    line-height: 1.4;
+    font-size: 4rem;
+    font-weight: bold;
+    color: $text-color-2;
+    @media (min-width: $desktop-breakpoint-phone) {
+      font-size: 6rem;
+    }
+    @media (min-width: $desktop-breakpoint-laptop) {
+      font-size: 7rem;
+      line-height: 1.2;
+    }
+    @media (min-width: $desktop-breakpoint-biglaptop) {
+      font-size: 10rem;
+      line-height: 1.2;
+    }
+  }
+  .light-title {
+    color: $text-color-1;
+    font-size: 2rem;
+    font-family: $font-title;
+    animation: blinktextcurser 0.5s steps(50) 6 normal,
+      typewriter-v2 1.5s steps(30) 0.8s 1 normal both;
+    overflow: hidden;
+    white-space: nowrap;
+    @media (min-width: $desktop-breakpoint-phone) {
+      font-size: 5rem;
+    }
+    @media (min-width: $desktop-breakpoint-laptop) {
+      font-size: 6rem;
+    }
+    @media (min-width: $desktop-breakpoint-biglaptop) {
+      font-size: 8rem;
+    }
+  }
+  .text-wrapper {
+    width: 100%;
+    margin-top: 25px;
+    max-width: 500px;
+
+    @media (min-width: $desktop-breakpoint-phone) {
+      max-width: 500px;
+    }
+    @media (min-width: $desktop-breakpoint-laptop) {
+      max-width: 500px;
+    }
+    @media (min-width: $desktop-breakpoint-biglaptop) {
+      max-width: 700px;
+    }
+  }
+}
+
+//////////////
+//Animation
+
+@keyframes blinktextcurser {
+  from {
+    border-right: 0px;
+  }
+  to {
+    border-right: 1px solid white;
+  }
+}
+@keyframes typewriter-v2 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 100%;
+  }
+}

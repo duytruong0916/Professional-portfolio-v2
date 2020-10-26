@@ -1,33 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;700;800;900&display=swap');
+//Font-family
+$font-text: 'Barlow', sans-serif;
+$font-title: 'Turret Road', cursive;
+
 $xxs-size: 0.5rem;
 $xs-size: 0.9rem;
 $s-size: 1.2rem;
 $xs-size: 1.4rem;
 $m-size: 1.6rem;
-$mx-size: 2.0rem;
+$mx-size: 2rem;
 $mxx-size: 2.5rem;
 $l-size: 3.2rem;
 $xl-size: 4.6rem;
 $xxl-size: 8.5rem;
-$desktop-breakpoint-phone: 76.8rem;
-$desktop-breakpoint-laptop: 99.2rem;
+$desktop-breakpoint-phone: 768px;
+$desktop-breakpoint-laptop: 1080px;
+$desktop-breakpoint-biglaptop: 1600px;
 //font-size
-$font-size-xtitle: 5.0rem;
-$font-size-title: 4.0rem;
-$font-size-xxlarge: 3.0rem;
+$font-size-xtitle: 5rem;
+$font-size-title: 4.2rem;
+$font-size-xxlarge: 3rem;
 $font-size-xlarge: 2.4rem;
-$font-size-large: 1.8rem;
-$font-size-medium: 1.4rem;
-$font-size-small: 1.2rem;
-$font-size-xsmall: 0.9rem;
-$font-size-xxsmall: 0.5rem;
+$font-size-large: 2rem;
+$font-size-medium: 1.5rem;
+$font-size-small: 1.3rem;
+$font-size-xsmall: 1.1rem;
+$font-size-xxsmall: 0.7rem;
 //color
-$home-color:#006c6c;
-$back-ground-1: black;
-$back-ground-2:white;
-$text-color-1: white;
-$text-color-2:black;
+$home-color: rgb(100, 255, 218);
+$home-color-light: rgba(
+  $color: $home-color,
+  $alpha: 0.6,
+);
+$back-ground-1: #071528;
+$back-ground-2: rgb(23, 42, 69);
+$text-color-1: rgb(141, 142, 169);
+$text-color-2: rgb(211, 211, 223);
 $blue: #1c88bf;
 $red: rgb(184, 57, 57);
-
-//Font-family
-$fancy-font: 'Gochi Hand', cursive;

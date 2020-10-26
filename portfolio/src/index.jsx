@@ -4,6 +4,8 @@ import "./Styles/style.scss";
 import AppRouter from "./Routes";
 import { StateProvider } from "./Store.jsx";
 import * as serviceWorker from "./serviceWorker";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 ReactDOM.render(
   <React.StrictMode>
