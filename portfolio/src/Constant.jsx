@@ -107,6 +107,7 @@ const Constants = {
         {
             name: 'AnguBetta store',
             type: 'Angular',
+            git: 'https://github.com/duytruong0916/bettafishshop-ecommerce-webapp',
             tech: 'Angular / Node.js / MongoDB', photo: `${Angubetta_image}`, link: '/projects/angubetta',
             summary: 'An online Betta fish store in which users can explore an amazing world of Betta fish and pick their favorite one for a reasonable price.'
         },
@@ -120,14 +121,16 @@ const Constants = {
         {
             name: 'Ultimate Authentication',
             type: 'ReactJS',
-            tech: 'React / Node.js / MongoDB',
+            tech: 'React/ Node + Express.js / MongoDB',
             photo: `${Ulti_image}`,
+            git: 'https://github.com/duytruong0916/Ultimate-Authentication',
             link: '/projects/ultimate',
             summary: 'An ultimate authentication system for web apps with features like account activation, forgot password, reset password, login with Facebook as well as Google'
         },
         {
             name: 'Expensify App',
             type: 'ReactJS',
+            git: 'https://github.com/duytruong0916/Budget-app',
             tech: 'React / Firebase / Bootstrap',
             photo: `${Ex_image}`, link: '/projects/banking',
             summary: 'An online expense tracking application'
@@ -143,11 +146,13 @@ const Constants = {
             name: 'Personal Website V-1',
             type: 'Angular', tech: 'Angular ( Material ) / HTML & CSS',
             photo: `${portfolio_image}`, link: '/projects/portfolio',
+            git: 'https://github.com/duytruong0916/professional-portfolio',
             summary: 'My first personal website to showcase the projects I have done since I started learning about web development. I designed and implemented this site in summer 2019.'
         },
         {
             name: 'Secret Storage',
             type: 'Angular',
+            git: 'https://github.com/duytruong0916/Secret-storage-app',
             tech: 'Angular / Node.js / ExpressJS',
             photo: `${secret_image}`, link: '/projects/secret',
             summary: 'An online secret place to keep your memories.'
@@ -167,14 +172,18 @@ const Constants = {
             name: 'Epics Team Builder',
             type: 'ReactJS',
             tech: 'React / Redux / Bootstrap',
-            photo: `${epic_image}`, link: '/projects/epics',
+            photo: `${epic_image}`,
+            link: '/projects/epics',
+            git: 'https://github.com/duytruong0916/epics-team-builder',
             summary: 'A user-friendly, platform agnostic, standalone application that was used as program automating the process of building teams and allowing users to select team formations based on a variety of desired factorsteams for the UTDesign EPICS program.'
         },
         {
             name: 'Timefoxwatch.com',
             type: 'ReactJS',
             tech: 'React / Redux / Node.js',
-            photo: `${timefox_image}`, link: '/projects/timefoxwatch',
+            git: 'https://github.com/duytruong0916/ecommerce-frontend',
+            photo: `${timefox_image}`,
+            link: '/projects/timefoxwatch',
             summary: 'Timefoxwatch.com is an online watch store that was developed in React-Redux environment with advanced features of a real-life eCommerce web application.'
         },
     ],
