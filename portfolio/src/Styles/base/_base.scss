@@ -1,5 +1,4 @@
-@import './setting';
-
+@import "./setting";
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -22,6 +21,7 @@ body {
   color: $home-color;
   display: inline-block;
   transition: all 0.3s ease-out;
+  font-family: $font-title;
   &:hover {
     cursor: pointer;
     transform: scale(1.05);
@@ -49,20 +49,26 @@ body {
     font-family: $font-title;
     position: relative;
     display: block;
+    @media (min-width: $desktop-breakpoint-laptop) {
+      font-size: $font-size-title;
+    }
     .highlight-text {
       font-size: $font-size-medium;
       margin-right: 10px;
       font-weight: normal;
     }
     &::after {
-      content: '';
+      content: "";
       position: absolute;
-      width: 50%;
+      width: 60%;
       height: 1px;
-      top: 50px;
+      top: 40px;
       left: 40px;
       background-color: $text-color-2;
       opacity: 0.3;
+      @media (min-width: $desktop-breakpoint-laptop) {
+        top: 50px;
+      }
     }
   }
 }

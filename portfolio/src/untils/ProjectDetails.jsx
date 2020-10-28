@@ -1,73 +1,76 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import AOS from 'aos';
-import { Link } from 'react-router-dom'
+import { Link, animateScroll as scroll } from "react-scroll";
+import { Link as RouterLink } from 'react-router-dom'
 import 'aos/dist/aos.css';
 
 function ProjectDetails(props) {
-    AOS.init({ duration: 700, delay: 100 });
-    const topRef = React.createRef();
-
+    AOS.init({ duration: 500, delay: 100, once: true });
     return (
         <>
-            <div className="go-back-button"><Link to="/" className="go-top-button py-3 px-5">Go Back</Link></div>
-            <div className="project-details-wrapper p-md-5 p-3" ref={topRef}>
-                <div className="project-title my-3">{props.title}</div>
-                <div className="p-md-5 p-2">
-                    <Row>
-                        <Col xs={12} md={7} style={{ borderRight: '1px solid black' }}>
-                            <div className="project-summary">{props.summary}</div>
-                            {props.description.map((des, i) => (
-                                <div className="project-description mt-4" key={i}>
-                                    {des}
-                                </div>
-                            ))}
-                        </Col>
-                        <Col xs={12} md={5}>
-                            <div className="project-tech-title my-4">Tech wrap-up</div>
-                            <ul className="tech-list">
+            <RouterLink to="/" className=" go-back-button svg-wrapper">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="long-arrow-alt-left" class="svg-inline--fa fa-long-arrow-alt-left fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M134.059 296H436c6.627 0 12-5.373 12-12v-56c0-6.627-5.373-12-12-12H134.059v-46.059c0-21.382-25.851-32.09-40.971-16.971L7.029 239.029c-9.373 9.373-9.373 24.569 0 33.941l86.059 86.059c15.119 15.119 40.971 4.411 40.971-16.971V296z"></path></svg>
+            </RouterLink>
+            <div className="project-details-wrapper" id="Top">
+                <div className="project-title">{props.title}</div>
+                <div className="">
+                    <div className="project-detail-summary">{props.summary}</div>
+                    {props.description.map((des, i) => (
+                        <div className="project-description" key={i}>
+                            {des}
+                        </div>
+                    ))}
+                    <div className="tech-inner-wrapper">
+                        <div className="tech-wrapper-1" data-aos="fade-right" data-aos-delay="300">
+                            <div className="project-tech-title">Tech wrap-up:</div>
+                            <div className="tech-list">
                                 {props.techsDescription.map((tech, i) => (
-                                    <li key={i} className="mt-2">{tech}</li>
+                                    <div key={i} className="item">{tech}</div>
                                 ))}
-                            </ul>
-                        </Col>
-                    </Row>
-                    <div className="my-5">
-                        <div className="project-tech-title">Technologies used</div>
-                        <div>
-                            {props.techUsed.map((tech, i) => (
-                                <a href={tech.link} className="text-decoration-none" target="_blank">
-                                    <button className="button-tech mx-2 my-2">{tech.name}</button>
-                                </a>
-                            ))}
+                            </div>
+                        </div>
+                        <div className="tech-wrapper-2" data-aos="fade-left" data-aos-delay="600">
+                            <div className="tech-inner-wrapper-2">
+                                <div className="project-tech-title">Technologies used:</div>
+                                <div className="list">
+                                    {props.techUsed.map((tech, i) => (
+                                        <a href={tech.link} className="text-decoration-none mt-2" target="_blank">
+                                            {tech.name}
+                                        </a>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div className="text-center my-5">
+                    <div className="my-5">
                         <a href={props.onlineLink} target="_blank">
-                            <button className="go-top-button">
-                                <i className="fa fa-share-square-o" aria-hidden="true"></i> View online
+                            <button className="button-link mt-4">
+                                <span>View Online</span>
                             </button>
                         </a>
                     </div>
                     <div>
                         {props.imageLaptop.map((im, i) => (
-                            <div key={i} className="p-md-4 p-3" data-aos='zoom-out'>
+                            <div key={i} className="" data-aos='fade-up'>
                                 <img src={im.link} alt={im.name} className="w-100" />
                             </div>))}
                     </div>
                     <div>
-                        <Row className="p-md-4 p-3" >
+                        <Row className="" >
                             {props.imageMobile.map((im, i) => (
-                                <Col xs={12} md={6} key={i} data-aos='zoom-out'>
+                                <Col xs={12} md={6} key={i} data-aos='fade-up'>
                                     <img src={im.link} alt={im.name} className="w-100" />
                                 </Col>
                             ))}
                         </Row>
                     </div>
                 </div>
-                <div className="text-center my-5">
-                    <button className="go-top-button" onClick={() => topRef.current.scrollIntoView({ behavior: "smooth" })}>Back to top</button>
-                </div>
+                <Link to="Top" className="go-top-button" spy={true} smooth={true} offset={-70} duration={1200} >
+                    <div className="circle">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="long-arrow-alt-left" className="svg-inline--fa fa-long-arrow-alt-left fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M134.059 296H436c6.627 0 12-5.373 12-12v-56c0-6.627-5.373-12-12-12H134.059v-46.059c0-21.382-25.851-32.09-40.971-16.971L7.029 239.029c-9.373 9.373-9.373 24.569 0 33.941l86.059 86.059c15.119 15.119 40.971 4.411 40.971-16.971V296z"></path></svg>
+                    </div>
+                </Link>
             </div>
         </>
     )

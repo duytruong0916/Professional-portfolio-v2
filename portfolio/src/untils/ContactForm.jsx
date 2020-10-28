@@ -31,7 +31,7 @@ function ContactForm() {
                 <Form.Control
                     type="email"
                     value={info.email}
-                    placeholder="Enter your email"
+                    placeholder="Your Email"
                     size="lg"
                     required={true}
                     onChange={onChangeHandle("email")}
@@ -41,7 +41,7 @@ function ContactForm() {
                 <Form.Control
                     value={info.name}
                     type="text"
-                    placeholder="Enter your full name"
+                    placeholder="Your Fullname"
                     size="lg"
                     required={true}
                     onChange={onChangeHandle("name")}
@@ -51,7 +51,7 @@ function ContactForm() {
                 <Form.Control
                     value={info.message}
                     as="textarea"
-                    placeholder="message"
+                    placeholder="Your Message"
                     rows={5}
                     size="lg"
                     onChange={onChangeHandle("message")}
@@ -60,9 +60,9 @@ function ContactForm() {
             </Form.Group>
             {info.success !== '' && <div className="text-warning">{info.success}</div>}
             <div className="text-center my-4">
-                <button className="button-tech mx-2 my-2" type="submit">
-                    Submit
-                     </button>
+                <button className="button-link mt-4">
+                    <span>Send Message</span>
+                </button>
             </div>
         </Form>
     );

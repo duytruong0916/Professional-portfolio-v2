@@ -16,7 +16,7 @@ import img13 from "../../assets/scrumstub/img6.jpg";
 function Scrumstub() {
   const title = "Scrumstubs.com";
   const summary =
-    "Scrumstubs.com is a platform created in order to facilitate workshops, meet ups, conferences, and coaching in the world of the agile frameworks. The platform aims to provide a workflow driven solution which serves to expedite the process of managing and creating a large number of events.";
+    "Scrumstubs.com is a full-stack Event Management Solution from Aleph Technologies LLC that allows to register for workshops, meeting and coaching courses.";
   const description = [
     <>
       Scrumstubs was the second project after Aleph-technologies.com that I and
@@ -46,7 +46,7 @@ function Scrumstub() {
       Responsive React web application rendering well on a variety of devices and window or screen sizes.
     </>,
     <>
-     Back-end server using Python/Django taking advantage of well-developed RESTful API.
+      Back-end server using Python/Django taking advantage of well-developed RESTful API.
     </>,
     <>Stripe for checkout feature</>,
     <>GitHub for project management</>,

@@ -19,10 +19,10 @@ function Portfolio() {
     ];
     const techsDescription = [
         <>
-           Single-page web application ultilizing Angular routing.
+            Single-page web application ultilizing Angular routing.
         </>,
         <>
-          Reponsive site rendering well on a variety of devices and window or screen sizes with Bootstrap grid system and Angular Material.
+            Reponsive site rendering well on a variety of devices and window or screen sizes with Bootstrap grid system and Angular Material.
         </>,
         <>Static website hosting with AWS S3 with custom domain.</>,
         <>Continuous deployment using AWS CodePipeLine and GitHub.</>,
@@ -53,7 +53,7 @@ function Portfolio() {
     return (
         <ProjectDetails
             title={title}
-            onlineLink= "http://newportfoliodnt.s3-website.us-east-2.amazonaws.com/"
+            onlineLink="http://newportfoliodnt.s3-website.us-east-2.amazonaws.com/"
             summary={summary}
             description={description}
             techsDescription={techsDescription}

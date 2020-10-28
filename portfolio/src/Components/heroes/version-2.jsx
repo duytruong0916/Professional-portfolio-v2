@@ -13,14 +13,16 @@ export default React.forwardRef((props, ref) => (
                 TX specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.
             </div>
             <div className="mt-5">
-                <button className="button-link mt-4">
-                    <Link to="Works" spy={true} smooth={true} offset={-70} duration={1200}>
+
+                <Link to="Works" spy={true} smooth={true} offset={-70} duration={1200}>
+                    <button className="button-link mt-4">
                         <span>View My Work</span>
                         <span className="ml-3"><i class="fa fa-long-arrow-right rotate-arrow" aria-hidden="true"></i></span>
-                    </Link>
-                </button>
+                    </button>
+                </Link>
+
             </div>
         </div>
-    </div>
+    </div >
 ));
 

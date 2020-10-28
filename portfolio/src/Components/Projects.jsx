@@ -1,34 +1,18 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import Card from '../untils/ProjectCard';
-import Angubetta_image from '../assets/angubetta/profile.jpg';
-import Scrumstubs_iamge from '../assets/scrumstub/pic1.png'
-import Aleph_image from '../assets/aleph/pic1.png'
-import epic_image from '../assets/epicsteambuilder/pic1.png'
-import Ulti_image from '../assets/authenticate/img2.png'
-import Ex_image from '../assets/budget-app/two.png'
-import portfolio_image from '../assets/portfolio/po1.png'
-import secret_image from '../assets/images/pic4.png'
-import timefox_image from '../assets/timefoxwatch/im1.png'
+import FeaturedCard from '../untils/FeatureProjectCard';
+import Constants from '../Constant';
 
 function Projects() {
+
     const [options, setOptions] = React.useState([
         { name: 'All', active: true },
         { name: 'ReactJS', active: false },
         { name: 'Angular', active: false },
     ])
-    const projects =
-        [
-            { name: 'AnguBetta store', type: 'Angular', tech: 'Angular / NodeJS / MongoDB', photo: `${Angubetta_image}`, link: '/projects/angubetta' },
-            { name: 'ScrumStubs.com', type: 'ReactJS', tech: 'React / Python / Django', photo: Scrumstubs_iamge, link: '/projects/scrumstub' },
-            { name: 'Aleph-techonologies.com', type: 'ReactJS', tech: 'React / Bootstrap / JavaScripts', photo: `${Aleph_image}`, link: '/projects/aleph' },
-            { name: 'Epics Team Builder', type: 'ReactJS', tech: 'React / Redux / Bootstrap', photo: `${epic_image}`, link: '/projects/epics' },
-            { name: 'Ultimate Authentication', type: 'ReactJS', tech: 'React / NodeJS / MongoDB', photo: `${Ulti_image}`, link: '/projects/ultimate' },
-            { name: 'Expensify App', type: 'ReactJS', tech: 'React / Firebase / Bootstrap', photo: `${Ex_image}`, link: '/projects/banking' },
-            { name: 'My Portfolio', type: 'Angular', tech: 'Angular / Angular Material / Bootstrap', photo: `${portfolio_image}`, link: '/projects/portfolio' },
-            { name: 'Secret Storage', type: 'Angular', tech: 'Angular / NodeJS / ExpressJS', photo: `${secret_image}`, link: '/projects/secret' },
-            { name: 'Timefoxwatch.com', type: 'ReactJS', tech: 'ReactJS / Redux / NodeJS', photo: `${timefox_image}`, link: '/projects/timefoxwatch' },
-        ]
+    const projects = Constants.projects;
+    const featureProjects = Constants.features;
     const [filterdProjects, setFilteredProjects] = React.useState([]);
 
     const onOptionChange = (name) => {
@@ -43,11 +27,15 @@ function Projects() {
         }
     };
 
-
+    const renderFeatureProject = () => (
+        <div className="feature-project-list-wrapper">
+            {featureProjects && featureProjects.map((project, index) => <FeaturedCard key={index} project={project} index={index} />)}
+        </div>
+    )
     const renderProjects = () => {
         if (filterdProjects.length > 0) {
             return (
-                <div className="project-list-wrapper">
+                <div>
                     <Row className="">
                         {filterdProjects.map((project, i) => (
                             <Col xs={12} md={6} lg={4} key={i} className="mt-5">
@@ -60,10 +48,10 @@ function Projects() {
         }
         else {
             return (
-                <div className="project-list-wrapper">
-                    <Row className="">
+                <div>
+                    <Row className="no-gutters">
                         {projects.map((project, i) => (
-                            <Col xs={12} md={6} lg={4} key={i} className="mt-5">
+                            <Col xs={12} md={6} lg={4} key={i} className="p-3">
                                 <Card project={project} />
                             </Col>
                         ))}
@@ -84,14 +72,16 @@ function Projects() {
     )
 
     return (
-        <div className="project-wrapper d-flex align-items-center p-md-5 p-3 py-5">
-            <div className="w-100">
-                <div className="my-4 font-weight-bold about-list text-center" data-aos="slide-left">
-                    <span className="text-white">See my works below. Unless explicitly stated otherwise, </span>
-                    <span>all their back-end and front-end parts were completely done by me</span>
+        <div className="">
+            <div>
+                {renderFeatureProject()}
+            </div>
+            <div className="project-listing">
+                <div className="my-4" data-aos="fade-up" data-aos-delay="150" data-aos-once="true" data-aos-duration="500">
+                    <div className="subsection-title">Other Interesting Projects</div>
+                    <div className="highlight-text text-center">view the archive</div>
                 </div>
-                <div className="section-title p-3">Projects</div>
-                {renderOption()}
+                {/* {renderOption()} */}
                 {renderProjects()}
             </div>
         </div>

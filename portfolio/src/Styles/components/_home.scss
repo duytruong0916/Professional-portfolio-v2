@@ -1,29 +1,28 @@
 .home-wrapper {
   min-height: 100vh;
   overflow: hidden;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  @media (min-width: $desktop-breakpoint-phone) {
+  @media (min-width: $desktop-breakpoint-laptop) {
     display: block;
   }
 }
 
 .media-wrapper {
-  z-index: 3;
-  position: absolute;
-  top: 25%;
-  right: 3%;
-
-  @media (max-width: $desktop-breakpoint-phone) {
-    top: 8rem;
-    right: 6%;
+  display: none;
+  @media (min-width: $desktop-breakpoint-phone) {
+    display: initial;
+    position: fixed;
+    top: 25%;
+    right: 30px;
   }
 
   i {
     margin-top: 2rem;
     color: $text-color-2;
-    font-size: $font-size-title;
+    font-size: $font-size-xlarge;
     transition: all 0.5s ease;
     @media (max-width: $desktop-breakpoint-phone) {
       font-size: $font-size-xlarge;

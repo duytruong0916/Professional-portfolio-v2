@@ -53,8 +53,8 @@ function Timefox() {
   const techUsed = [
     { name: "ReactJS", link: "https://reactjs.org/tutorial/tutorial.html" },
     { name: "NodeJS", link: "https://nodejs.org/en/" },
-    { name: "ExpressJS",link: "https://www.tutorialspoint.com/expressjs/index.htm",},
-    { name: "MongoDB",link: "https://www.mongodb.com/",},
+    { name: "ExpressJS", link: "https://www.tutorialspoint.com/expressjs/index.htm", },
+    { name: "MongoDB", link: "https://www.mongodb.com/", },
     { name: "Bootstrap", link: "https://getbootstrap.com/" },
     { name: "HTML", link: "https://html.com/" },
     { name: "CSS", link: "https://htmldog.com/guides/css/" },
@@ -83,7 +83,7 @@ function Timefox() {
   return (
     <ProjectDetails
       title={title}
-      onlineLink= "http://timefoxwatch.com/"
+      onlineLink="http://timefoxwatch.com/"
       summary={summary}
       description={description}
       techsDescription={techsDescription}

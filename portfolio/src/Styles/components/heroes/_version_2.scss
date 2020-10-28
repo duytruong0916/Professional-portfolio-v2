@@ -2,8 +2,6 @@
   position: relative;
   width: 100%;
   padding-right: 30px;
-  @media (min-width: $desktop-breakpoint-phone) {
-  }
   @media (min-width: $desktop-breakpoint-laptop) {
     max-width: 800px;
     margin-top: 150px;

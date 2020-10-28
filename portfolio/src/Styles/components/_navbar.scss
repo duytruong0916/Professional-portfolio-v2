@@ -11,11 +11,6 @@
 }
 .nav-scroll {
   background-color: rgba($color: $back-ground-1, $alpha: 0.9);
-  .nav-links {
-    li {
-      color: white;
-    }
-  }
 }
 .portfolio-title {
   color: $home-color;
@@ -72,7 +67,7 @@
     }
   }
   li:after {
-    content: '';
+    content: "";
     display: block;
     height: 2px;
     // left: 50%;
@@ -81,9 +76,16 @@
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
   }
-  li:hover:after {
-    width: 100%;
-    // left: 0;
+}
+.active-navlink {
+  li {
+    color: $home-color;
+    &::after {
+      width: 100%;
+    }
+    .special {
+      transform: scale(1.2);
+    }
   }
 }
 
@@ -98,7 +100,7 @@
     .line {
       display: block;
       position: absolute;
-      height: 5px;
+      height: 2px;
       border-radius: 2px;
       background-color: $home-color;
       border-radius: 9px;
@@ -109,18 +111,18 @@
 
       &:nth-child(1) {
         top: 10px;
-        width: 50px;
+        width: 40px;
       }
 
       &:nth-child(2),
       &:nth-child(3) {
         top: 19px;
-        width: 40px;
+        width: 30px;
       }
 
       &:nth-child(4) {
         top: 28px;
-        width: 30px;
+        width: 20px;
       }
     }
 
@@ -158,7 +160,7 @@
     li {
       color: $text-color-1;
       display: block;
-      font-size: $font-size-xlarge;
+      font-size: $font-size-large;
       font-weight: bold;
       margin-top: 7rem;
     }

@@ -56,7 +56,7 @@ function Navbar(props) {
           </div>
           {items && items.map((item, index) => (
             <>
-              <Link to={item} spy={true} smooth={true} offset={-70} duration={500 * (index + 1)}>
+              <Link activeClass="active-navlink" to={item} spy={true} smooth={true} offset={-70} duration={500 * (index + 1)}>
                 <li onClick={ontoggleHanle}>
                   <span className="special">0{index + 1}.</span>{item}
                 </li>

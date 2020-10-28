@@ -25,9 +25,11 @@ function About(props) {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
   const readMore = () => {
     setReadMore(!isReadMore);
   };
+
   const CustomToggle = ({ children, eventKey }) => {
     const decoratedOnClick = useAccordionToggle(eventKey, () =>
       console.log('totally custom!'),
@@ -44,11 +46,8 @@ function About(props) {
 
   const mouseOutHandler = () => {
     if (isReadMore == false) {
-      const timer = setTimeout(() => {
-        showMoreRef.current.click();
-        readMore();
-      }, 1500);
-      return () => clearTimeout(timer);
+      showMoreRef.current.click();
+      readMore();
     }
   }
 

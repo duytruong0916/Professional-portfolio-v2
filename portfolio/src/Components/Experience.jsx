@@ -17,7 +17,7 @@ export default () => {
         <div className="option-wrapper" data-aos="fade-up" data-aos-delay="150" data-aos-once="true" data-aos-duration="500">
             {options && options.map((option, index) => (
                 <div className={`option-item ${activeItem === option ? 'active-item' : ''}`} key={index} onClick={() => onActiveHandle(option)}>
-                    {option}
+                    {index + 1}. {option}
                 </div>
             ))}
         </div>
@@ -31,7 +31,7 @@ export default () => {
             </div>
             <div className="location-time">
                 <span>{filteredData.location}</span>
-                <span className="float-right">{filteredData.time}</span>
+                <span className="float-right timeline">{filteredData.time}</span>
             </div>
             <div className="description mt-5">
                 {filteredData.description.map((p, i) => (

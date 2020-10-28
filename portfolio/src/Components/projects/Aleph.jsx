@@ -16,7 +16,7 @@ import img13 from "../../assets/aleph/img6.jpg";
 function Aleph() {
   const title = "Aleph-technologies.com";
   const summary =
-    "Aleph-technologies.com a full-stack Event Management Solution from Aleph Technologies LLC that allows to register for workshops, meeting and coaching courses.";
+    "Aleph-technologies.com is a platform created in order to facilitate workshops, meet ups, conferences, and coaching in the world of the agile frameworks. The platform aims to provide a workflow driven solution which serves to expedite the process of managing and creating a large number of events.";
   const description = [
     <>
       Throughout my time at Alepth Technologies, along with the team, I had

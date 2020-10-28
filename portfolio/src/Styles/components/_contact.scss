@@ -1,38 +1,81 @@
-.contact-wrapper {
-  margin-top: -5px;
-  background-color: $back-ground-2;
-  overflow: hidden;
-  i {
-    color: white;
-    font-size: $font-size-xlarge;
-    @media (max-width: $desktop-breakpoint-phone) {
-      font-size: $font-size-xlarge;
-    }
-  }
-}
-
-.icon-wrapper {
-  background-color: rgb(14, 13, 13);
-  padding: 0.5rem 1rem;
-  &:hover {
-    transition: all 1s ease;
-    cursor: pointer;
-    i {
-      transition: all 1s ease;
-      transform: rotateY(360deg);
-    }
-  }
-}
-
-.fa-angle-double-right{
-    transform: rotate(270deg);
-}
-
-.form-wrapper {
+#Contact {
   margin: auto;
-  width: 100%;
-  @media (max-width: $desktop-breakpoint-phone) {
-    width: 95%;
+  margin-top: 100px;
+  @media (min-width: $desktop-breakpoint-phone) {
+    width: 70%;
   }
+  @media (min-width: $desktop-breakpoint-laptop) {
+    width: 60%;
+    margin-top: 100px;
+    margin-bottom: 150px;
+  }
+  .contact-wrapper {
+    padding: 0 10px;
+    @media (min-width: $desktop-breakpoint-phone) {
+      padding: 0 30px;
+    }
+  }
+}
+form {
+  margin-top: 30px;
+}
+input,
+textarea,
+input:focus,
+textarea:focus {
+}
+.form-group {
+  input,
+  textarea,
+  input:valid,
+  input:focus,
+  textarea:focus {
+    background-color: $back-ground-2;
+    border: 0;
+    border-radius: 0;
+    color: $home-color-light;
+    font-family: $font-title;
+    font-size: $font-size-medium;
+    outline: none !important;
+  }
+}
 
+input:focus,
+textarea:focus {
+  border: 1px solid rgba($color: $home-color, $alpha: 0.3) !important;
+}
+
+.footer-media-wrapper {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  @media (min-width: $desktop-breakpoint-phone) {
+    display: none;
+  }
+  .media-icon {
+    margin: 0 15px;
+
+    i {
+      margin-top: 2rem;
+      color: $text-color-2;
+      font-size: $font-size-xlarge;
+      transition: all 0.5s ease;
+      @media (max-width: $desktop-breakpoint-phone) {
+        font-size: $font-size-large;
+      }
+
+      &:hover {
+        color: $home-color;
+        transform: scale(1.2) translateX(-5px);
+      }
+    }
+  }
+}
+.copy-right {
+  padding-top: 15px;
+  color: $text-color-2;
+  font-size: small;
+  text-align: center;
+  padding-bottom: 30px;
+  font-family: $font-title;
 }
