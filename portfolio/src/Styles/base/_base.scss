@@ -12,7 +12,11 @@ body {
   letter-spacing: 1px;
   word-spacing: 2px;
 }
-
+body.nav-open {
+  @media (max-width: $desktop-breakpoint-phone) {
+    position: fixed;
+  }
+}
 .highlight-text {
   color: $home-color;
 }

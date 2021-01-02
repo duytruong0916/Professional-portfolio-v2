@@ -72,10 +72,19 @@ textarea:focus {
   }
 }
 .copy-right {
-  padding-top: 15px;
-  color: $text-color-2;
-  font-size: small;
   text-align: center;
-  padding-bottom: 30px;
-  font-family: $font-title;
+  padding-top: 15px;
+  a {
+    color: $text-color-2;
+    font-size: small;
+    padding-bottom: 30px;
+    font-family: $font-title;
+    display: inline-block;
+    transition: transform 300ms ease;
+    &:hover {
+      color: $home-color;
+      text-decoration: none;
+      transform: scale(1.05);
+    }
+  }
 }

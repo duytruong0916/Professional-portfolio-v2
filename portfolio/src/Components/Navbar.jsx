@@ -31,6 +31,12 @@ function Navbar(props) {
 
   const ontoggleHanle = () => {
     setToggle(!toggle);
+    if (toggle == false) {
+      document.getElementById("body").classList.add('nav-open')
+    } else {
+      document.getElementById("body").classList.remove('nav-open')
+    }
+
   };
 
   return (
