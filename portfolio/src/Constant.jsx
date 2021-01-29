@@ -102,17 +102,18 @@ const Constants = {
         "An Event Management Solution from Aleph Technologies LLC that allows to register for workshops, meeting and coaching courses.",
     },
     {
-      name: "Hayter Engineering Site",
+      name: "Haytereng.com",
       type: "CMS",
-      tech: "Drupal / PHP / HTML & (s)CSS",
+      tech: "Drupal 8 / PHP / JavaScript",
       photo: `${timefox_image}`,
+      link: "/projects/hayter",
       summary:
         "A responsive and easy-to-navigate website with a supportive CMS developed for Hayter Engineering company in Paris TX.",
     },
     {
       name: "Gold Eye Clinic Website",
       type: "CMS",
-      tech: "Drupal / PHP / HTML & (s)CSS",
+      tech: "Drupal 9 / PHP / Javascript",
       photo: `${timefox_image}`,
       summary:
         "A fully responsive website with a supportive CMS and cohesive layout developed for Gold Eye Clinic in Palestine TX .",
@@ -173,7 +174,7 @@ const Constants = {
       photo: `${secret_image}`,
       link: "/projects/secret",
       summary:
-        "A single-page application that allows to store images and stories in a safe place.",
+        "A  a single-page application that allows to store images and stories in a safe place.",
     },
   ],
 

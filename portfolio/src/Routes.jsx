@@ -12,6 +12,8 @@ import Timefoxwatch from "./Components/projects/Timefox";
 import Portfolio from "./Components/projects/Portfolio";
 import Banking from "./Components/projects/Banking";
 import Secret from "./Components/projects/Secret";
+import Hayter from "./Components/projects/Hayter";
+
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 export const history = createHistory();
 
@@ -74,6 +76,11 @@ const Routes = () => {
                     <Route
                       path="/projects/secret"
                       component={Secret}
+                      exact={true}
+                    />
+                    <Route
+                      path="/projects/hayter"
+                      component={Hayter}
                       exact={true}
                     />
                   </Switch>
