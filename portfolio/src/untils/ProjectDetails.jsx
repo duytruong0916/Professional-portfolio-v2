@@ -80,7 +80,7 @@ function ProjectDetails(props) {
           </div>
           <div>
             {props.imageLaptop.map((im, i) => (
-              <div key={i} className="" data-aos="fade-up">
+              <div key={i} className="mt-5" data-aos="fade-up">
                 <img src={im.link} alt={im.name} className="w-100" />
               </div>
             ))}
