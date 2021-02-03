@@ -174,7 +174,7 @@ const Constants = {
       photo: `${secret_image}`,
       link: "/projects/secret",
       summary:
-        "A  a single-page application that allows to store images and stories in a safe place.",
+        "A single-page application that allows to store images and stories in a safe place.",
     },
   ],
 
