@@ -24,10 +24,10 @@ function Secret() {
     </>,
   ];
   const techsDescription = [
-    <>Supportive Drupal 8 CMS</>,
+    <>Supportive and user-friendly CMS</>,
     <>Progressive and reposponive design</>,
     <>Powerful Nginx server and DNS management</>,
-    <></>,
+    <>Custom Drupal themes & Symfony framework</>,
   ];
   const techUsed = [
     { name: "HTML", link: "https://html.com/" },

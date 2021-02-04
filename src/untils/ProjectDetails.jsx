@@ -1,12 +1,9 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import AOS from "aos";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
-import "aos/dist/aos.css";
 
 function ProjectDetails(props) {
-  AOS.init({ duration: 500, delay: 100, once: true });
   return (
     <>
       <RouterLink to="/" className=" go-back-button svg-wrapper">

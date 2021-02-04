@@ -42,10 +42,12 @@ function Timefox() {
   ];
   const techsDescription = [
     <>
-      Responsive React/Redux web application rendering well on a variety of devices and window or screen sizes.
+      Responsive React/Redux web application rendering well on a variety of
+      devices and window or screen sizes.
     </>,
     <>
-      Back-end server using Node.js, Express.js and Mongo taking advantage of well-developed RESTful API and following MVC Pattern.
+      Back-end server using Node.js, Express.js and Mongo taking advantage of
+      well-developed RESTful API and following MVC Pattern.
     </>,
     <>Braintree Sandbox as a testing environment for checkout feature.</>,
     <>AWS S3 and EC2 for product deployment.</>,
@@ -53,8 +55,11 @@ function Timefox() {
   const techUsed = [
     { name: "ReactJS", link: "https://reactjs.org/tutorial/tutorial.html" },
     { name: "NodeJS", link: "https://nodejs.org/en/" },
-    { name: "ExpressJS", link: "https://www.tutorialspoint.com/expressjs/index.htm", },
-    { name: "MongoDB", link: "https://www.mongodb.com/", },
+    {
+      name: "ExpressJS",
+      link: "https://www.tutorialspoint.com/expressjs/index.htm",
+    },
+    { name: "MongoDB", link: "https://www.mongodb.com/" },
     { name: "Bootstrap", link: "https://getbootstrap.com/" },
     { name: "HTML", link: "https://html.com/" },
     { name: "CSS", link: "https://htmldog.com/guides/css/" },
@@ -83,7 +88,7 @@ function Timefox() {
   return (
     <ProjectDetails
       title={title}
-      onlineLink="http://timefoxwatch.com/"
+      onlineLink="http://timefoxwatch.com.s3-website-us-east-1.amazonaws.com/"
       summary={summary}
       description={description}
       techsDescription={techsDescription}

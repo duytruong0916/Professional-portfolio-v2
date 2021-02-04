@@ -1,10 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 function Card(props) {
-  AOS.init();
   return (
     <div className="card">
       <div className="card-content" style={{}}>
