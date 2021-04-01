@@ -86,6 +86,14 @@ const Constants = {
 
   projects: [
     {
+      name: "Goldeyeclinic.com",
+      type: "CMS",
+      tech: "Drupal 9 / PHP / Javascript",
+      link: "/projects/goldeye",
+      summary:
+        "A fully responsive website with a supportive CMS and cohesive layout developed for Gold Eye Clinic in Palestine TX .",
+    },
+    {
       name: "Aleph-techonologies.com",
       type: "ReactJS",
       tech: "React / ES6 / Django",
@@ -98,21 +106,21 @@ const Constants = {
       type: "CMS",
       tech: "Statamic 3 / Vue / HTML & CSS",
       summary:
-        "A fully-responsive and well-designed website with a supportive CMS and cohesive layout developed for Brazoria County in Houston TX.",
+        "An economic development website with a supportive CMS and cohesive layout built for Waco city in Texas.",
     },
     {
       name: "Locatesiouxcity.com",
       type: "CMS",
       tech: "Statamic 3 / Vue / HTML & CSS",
       summary:
-        "A fully-responsive and well-designed website with a supportive CMS and cohesive layout developed for Brazoria County in Houston TX.",
+        "An economic development website with a supportive CMS and cohesive layout built for Sioux City in Iowa. ",
     },
     {
       name: "Brittswine.com",
       type: "CMS",
       tech: "PHP / Lumen / HTML & CSS",
       summary:
-        "A fully-responsive and well-designed website with a supportive CMS and cohesive layout developed for Brazoria County in Houston TX.",
+        "A responsive and beautiful website developed for a restaurant in East Texas",
     },
     {
       name: "ScrumStubs.com",
@@ -133,19 +141,11 @@ const Constants = {
         "A responsive and easy-to-navigate website with a supportive CMS developed for Hayter Engineering company in Paris TX.",
     },
     {
-      name: "Goldeyeclinic.com",
-      type: "CMS",
-      tech: "Drupal 9 / PHP / Javascript",
-      photo: `${timefox_image}`,
-      summary:
-        "A fully responsive website with a supportive CMS and cohesive layout developed for Gold Eye Clinic in Palestine TX .",
-    },
-    {
       name: "Rlacy.com",
       type: "CMS",
       tech: "Statamic 3 / Vue / HTML & CSS",
       summary:
-        "A fully-responsive and well-designed website with a supportive CMS and cohesive layout developed for Brazoria County in Houston TX.",
+        "A fully-responsive and well-designed website with a supportive CMS and cohesive layout developed for R.lacy in Longview Tx.",
     },
     {
       name: "Brazoria County Website",

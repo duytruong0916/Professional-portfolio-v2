@@ -14,6 +14,7 @@ import Banking from "./Components/projects/Banking";
 import Secret from "./Components/projects/Secret";
 import Hayter from "./Components/projects/Hayter";
 import DMI from "./Components/projects/Dmi";
+import Goldeye from "./Components/projects/Goldeye";
 
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 export const history = createHistory();
@@ -85,6 +86,11 @@ const Routes = () => {
                       exact={true}
                     />
                     <Route path="/projects/dmi" component={DMI} exact={true} />
+                    <Route
+                      path="/projects/goldeye"
+                      component={Goldeye}
+                      exact={true}
+                    />
                   </Switch>
                 </CSSTransition>
               </TransitionGroup>
