@@ -158,8 +158,8 @@ const Constants = {
       name: "Personal Website V-2",
       type: "ReactJS",
       tech: "React / Bootstrap / HTML & (s)CSS",
-      photo: `${timefox_image}`,
-      summary: "The second version for my personal website.",
+      link: "/projects/porfolio-v2",
+      summary: "The second version of personal website.",
     },
     {
       name: "Ultimate Authentication",

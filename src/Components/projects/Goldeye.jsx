@@ -18,7 +18,7 @@ function Aleph() {
     <>
       Gold Eyes Clinic was looking to invest more in their customers by
       providing a website that made it easy to do all things electric. I was
-      lucky enough to be responsive for developing their new website during my
+      lucky enough to be responsible for developing their new website during my
       time at Encore. It took 2-3 months for the team to get this beautiful
       website live.
     </>,
