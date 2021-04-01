@@ -7,6 +7,7 @@ import Ex_image from "./assets/budget-app/two.png";
 import portfolio_image from "./assets/portfolio/po1.png";
 import secret_image from "./assets/images/pic4.png";
 import timefox_image from "./assets/timefoxwatch/im1.png";
+import dmi from "./assets/dmi/pc1.png";
 
 const Constants = {
   works: {
@@ -85,10 +86,31 @@ const Constants = {
 
   projects: [
     {
-      name: "Brazoria County Website",
+      name: "Aleph-techonologies.com",
+      type: "ReactJS",
+      tech: "React / ES6 / Django",
+      link: "/projects/aleph",
+      summary:
+        "A platform created in order to facilitate workshops, meet ups, conferences, and coaching in the world of the agile frameworks.",
+    },
+    {
+      name: "Wacochamber.com",
       type: "CMS",
       tech: "Statamic 3 / Vue / HTML & CSS",
-      photo: `${timefox_image}`,
+      summary:
+        "A fully-responsive and well-designed website with a supportive CMS and cohesive layout developed for Brazoria County in Houston TX.",
+    },
+    {
+      name: "Locatesiouxcity.com",
+      type: "CMS",
+      tech: "Statamic 3 / Vue / HTML & CSS",
+      summary:
+        "A fully-responsive and well-designed website with a supportive CMS and cohesive layout developed for Brazoria County in Houston TX.",
+    },
+    {
+      name: "Brittswine.com",
+      type: "CMS",
+      tech: "PHP / Lumen / HTML & CSS",
       summary:
         "A fully-responsive and well-designed website with a supportive CMS and cohesive layout developed for Brazoria County in Houston TX.",
     },
@@ -111,12 +133,26 @@ const Constants = {
         "A responsive and easy-to-navigate website with a supportive CMS developed for Hayter Engineering company in Paris TX.",
     },
     {
-      name: "Gold Eye Clinic Website",
+      name: "Goldeyeclinic.com",
       type: "CMS",
       tech: "Drupal 9 / PHP / Javascript",
       photo: `${timefox_image}`,
       summary:
         "A fully responsive website with a supportive CMS and cohesive layout developed for Gold Eye Clinic in Palestine TX .",
+    },
+    {
+      name: "Rlacy.com",
+      type: "CMS",
+      tech: "Statamic 3 / Vue / HTML & CSS",
+      summary:
+        "A fully-responsive and well-designed website with a supportive CMS and cohesive layout developed for Brazoria County in Houston TX.",
+    },
+    {
+      name: "Brazoria County Website",
+      type: "CMS",
+      tech: "Statamic 3 / Vue / HTML & CSS",
+      summary:
+        "A fully-responsive and well-designed website with a supportive CMS and cohesive layout developed for Brazoria County in Houston TX.",
     },
     {
       name: "Personal Website V-2",
@@ -180,13 +216,13 @@ const Constants = {
 
   features: [
     {
-      name: "Aleph-techonologies.com",
+      name: "Thedigitalmarketinginstitute.org",
       type: "ReactJS",
       tech: "React / ES6 / Django",
-      photo: `${Aleph_image}`,
-      link: "/projects/aleph",
+      photo: `${dmi}`,
+      link: "/projects/dmi",
       summary:
-        "A platform created in order to facilitate workshops, meet ups, conferences, and coaching in the world of the agile frameworks. The platform aims to provide a workflow driven solution which serves to expedite the process of managing and creating a large number of events.",
+        "UI/UX for the website of International Institute of Digital Marketing website. IIDM™ is a certifying body founded in the USA by several long-standing marketers",
     },
     {
       name: "Epics Team Builder",
