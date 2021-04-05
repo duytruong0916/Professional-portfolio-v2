@@ -15,6 +15,7 @@ function Projects() {
   const projects = Constants.projects;
   const featureProjects = Constants.features;
   const [filterdProjects, setFilteredProjects] = React.useState([]);
+
   const onCountHandle = () => {
     if (count < projects.length) {
       setCount(count + 3);
@@ -22,6 +23,7 @@ function Projects() {
       setCount(6);
     }
   };
+
   const onOptionChange = (name) => {
     let new_options = [];
     options.forEach((option) =>
@@ -45,6 +47,7 @@ function Projects() {
         ))}
     </div>
   );
+
   const renderProjects = () => {
     return (
       <>
