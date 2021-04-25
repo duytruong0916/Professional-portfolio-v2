@@ -1,5 +1,5 @@
-import React from "react";
-import Constants from "../Constant";
+import React from 'react';
+import Constants from '../Constant';
 
 export default () => {
   const options = [...Constants.works.company];
@@ -14,21 +14,19 @@ export default () => {
 
   const renderFitler = () => (
     <div
-      className="option-wrapper"
-      data-aos="fade-up"
-      data-aos-delay="150"
-      data-aos-once="true"
-      data-aos-duration="500"
-    >
+      className='option-wrapper'
+      data-aos='fade-up'
+      data-aos-delay='150'
+      data-aos-once='true'
+      data-aos-duration='500'>
       {options &&
         options.map((option, index) => (
           <div
             className={`option-item ${
-              activeItem === option ? "active-item" : ""
+              activeItem === option ? 'active-item' : ''
             }`}
             key={index}
-            onClick={() => onActiveHandle(option)}
-          >
+            onClick={() => onActiveHandle(option)}>
             {index + 1}. {option}
           </div>
         ))}
@@ -37,21 +35,20 @@ export default () => {
 
   const renderData = () => (
     <div
-      className="content-wrapper"
-      data-aos="fade-up"
-      data-aos-delay="150"
-      data-aos-once="true"
-      data-aos-duration="800"
-    >
-      <div className="title-company">
-        <span className="title">{filteredData.title}</span>
-        <span className="highlight-text ml-2"> @ {activeItem}</span>
+      className='content-wrapper'
+      data-aos='fade-up'
+      data-aos-delay='150'
+      data-aos-once='true'
+      data-aos-duration='800'>
+      <div className='title-company'>
+        <span className='title'>{filteredData.title}</span>
+        <span className='highlight-text ml-2'> @ {activeItem}</span>
       </div>
-      <div className="location-time">
+      <div className='location-time'>
         <span>{filteredData.location}</span>
-        <span className="float-right timeline">{filteredData.time}</span>
+        <span className='float-right timeline'>{filteredData.time}</span>
       </div>
-      <div className="description mt-5">
+      <div className='description mt-5'>
         {filteredData.description.map((p, i) => (
           <p key={i}>{p}</p>
         ))}
