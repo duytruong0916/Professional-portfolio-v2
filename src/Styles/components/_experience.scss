@@ -13,7 +13,8 @@
     overflow-x: scroll;
     overflow-y: hidden;
     @media (min-width: $desktop-breakpoint-laptop) {
-      overflow: hidden;
+      overflow-x: scroll;
+      overflow-y: hidden;
       // width: 75%;
       &::after {
         content: "";

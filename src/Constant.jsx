@@ -11,14 +11,28 @@ import dmi from "./assets/dmi/pc1.png";
 
 const Constants = {
   works: {
-    company: ["Encore Multimedia", "Aleph Technologies", "FUJINET SYSTEMS JSC"],
+    company: ["Global Payments Inc","Encore Multimedia", "Aleph Technologies", "FUJINET SYSTEMS JSC"],
     data: [
+      {
+        company: "Global Payments Inc",
+        information: {
+          title: "Software Engineer",
+          location: "Atlanta, GA.",
+          time: "6/2021 - Present",
+          description: [
+            "Developed and tested the frontend of the application",
+            "Improved and optimized functionality and performance",
+            "Collaborated with designers to architect the frontend of the application.",
+            "Participated in code review",
+          ],
+        },
+      },
       {
         company: "Encore Multimedia",
         information: {
           title: "Web Developer",
           location: "Longview, TX.",
-          time: "7/2020 - present",
+          time: "7/2020 - 6/2021",
           description: [
             "Worked closely with designers and management team to develop marketing websites",
             "Assisted with Drupal custom module and theme development to meet the client needs",
@@ -42,11 +56,11 @@ const Constants = {
         },
       },
       {
-        company: "FUJINET SYSTEMS JSC",
+        company: "Freelancer",
         information: {
           title: "Web Developer",
           location: "HCM, Vietnam",
-          time: "1/2018 – 2/2019",
+          time: "1/2013 – 2/2015",
           description: [
             "Developed and maintained client websites using HTML, CSS and jQuery.",
             "Tested sites in various browsers and devices to ensure cross-browser compatibility and responsiveness",
