@@ -1,17 +1,17 @@
 import React from "react";
-import { store } from "../Store";
 import resume from "../assets/files/resume.pdf";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 function Navbar(props) {
   const [toggle, setToggle] = React.useState(false);
-  const globalState = React.useContext(store);
   const [scroll, setScroll] = React.useState(false);
   const [scrollFar, setScrollFar] = React.useState(false);
+
   const navRef = React.useRef(); //For the nav on scroll animation
   const logoRef = React.useRef(); // For the logo on scroll animation
   navRef.current = scroll;
   logoRef.current = scrollFar;
+
   const items = ["About", "Experience", "Works", "Contact"];
 
   React.useLayoutEffect(() => {
@@ -88,7 +88,7 @@ function Navbar(props) {
             ))}
           <li class="resume">
             <a
-              href="https://www.linkedin.com/feed/"
+              href="https://www.linkedin.com/in/duytruongfdp/"
               target="_blank"
               className="quote text-decoration-none"
             >

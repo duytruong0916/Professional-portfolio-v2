@@ -2,14 +2,16 @@ import React from 'react';
 import Constants from '../Constant';
 
 export default () => {
+
   const options = [...Constants.works.company];
   const data = [...Constants.works.data];
+  
   const [filteredData, setFilteredData] = React.useState(data[0].information);
   const [activeItem, setActive] = React.useState(options[0]);
 
   const onActiveHandle = (name) => {
     setActive(name);
-    setFilteredData(data.filter((item) => item.company == name)[0].information);
+    setFilteredData(data.find((item) => item.company == name).information);
   };
 
   const renderFitler = () => (

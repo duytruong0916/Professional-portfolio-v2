@@ -6,38 +6,12 @@ import Constants from "../Constant";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 function Projects() {
-  const [options, setOptions] = React.useState([
-    { name: "All", active: true },
-    { name: "ReactJS", active: false },
-    { name: "Angular", active: false },
-  ]);
+
   const [count, setCount] = React.useState(6);
   const projects = Constants.projects;
   const featureProjects = Constants.features;
-  const [filterdProjects, setFilteredProjects] = React.useState([]);
 
-  const onCountHandle = () => {
-    if (count < projects.length) {
-      setCount(count + 3);
-    } else {
-      setCount(6);
-    }
-  };
-
-  const onOptionChange = (name) => {
-    let new_options = [];
-    options.forEach((option) =>
-      option.name === name
-        ? new_options.push({ ...option, active: true })
-        : new_options.push({ ...option, active: false })
-    );
-    setOptions(new_options);
-    if (name === "All") {
-      setFilteredProjects(projects.slice());
-    } else {
-      setFilteredProjects(projects.filter((project) => project.type === name));
-    }
-  };
+  const onCountHandle = () => count < projects.length ? setCount(count + 3) :  setCount(6);
 
   const renderFeatureProject = () => (
     <div className="feature-project-list-wrapper">
@@ -48,8 +22,7 @@ function Projects() {
     </div>
   );
 
-  const renderProjects = () => {
-    return (
+  const renderProjects = () => (
       <>
         <Row className="no-gutters">
           {projects.map((project, i) => {
@@ -82,24 +55,10 @@ function Projects() {
         </div>
       </>
     );
-  };
 
-  const renderOption = () => (
-    <div className="option-wrapper w-100 my-5">
-      {options.map((option, i) => (
-        <div
-          key={i}
-          className={`mx-5 mb-4 option ${option.active ? "option-active" : ""}`}
-          onClick={() => onOptionChange(option.name)}
-        >
-          {option.name}
-        </div>
-      ))}
-    </div>
-  );
 
   return (
-    <div className="">
+    <>
       <div>{renderFeatureProject()}</div>
       <div className="project-listing">
         <div
@@ -112,12 +71,10 @@ function Projects() {
           <div id="Projects" className="subsection-title mb-5">
             Other Interesting Projects
           </div>
-          {/* <div className="highlight-text text-center">view the archive</div> */}
         </div>
-        {/* {renderOption()} */}
         {renderProjects()}
       </div>
-    </div>
+    </>
   );
 }
 
