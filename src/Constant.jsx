@@ -165,6 +165,7 @@ const Constants = {
       name: "Brazoria County Website",
       type: "CMS",
       tech: "Statamic 3 / Vue / HTML & CSS",
+      link: "/projects/brazoria",
       summary:
         "A fully-responsive and well-designed website with a supportive CMS and cohesive layout developed for Brazoria County in Houston TX.",
     },

@@ -16,6 +16,7 @@ import Hayter from './Components/projects/Hayter';
 import DMI from './Components/projects/Dmi';
 import Goldeye from './Components/projects/Goldeye';
 import Porfolio_v2 from './Components/projects/Porfolio-v2';
+import Brazoria from './Components/projects/Brazoria';
 
 import {TransitionGroup, CSSTransition} from 'react-transition-group';
 export const history = createHistory();
@@ -89,6 +90,11 @@ const Routes = () => {
                     <Route
                       path='/projects/goldeye'
                       component={Goldeye}
+                      exact={true}
+                    />
+                    <Route
+                      path='/projects/brazoria'
+                      component={Brazoria}
                       exact={true}
                     />
                     <Route

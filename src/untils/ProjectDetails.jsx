@@ -84,7 +84,7 @@ function ProjectDetails(props) {
           </div>
           <div>
             <Row className="">
-              {props.imageMobile.map((im, i) => (
+              {props.imageMobile?.map((im, i) => (
                 <Col xs={12} md={6} key={i} data-aos="fade-up">
                   <img src={im.link} alt={im.name} className="w-100" />
                 </Col>

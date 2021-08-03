@@ -15,6 +15,7 @@ function Contact() {
             </div>)}
         </div>
     );
+    
     return (
         <div className="contact-wrapper">
             <div className="phone">Phone: 214-235-5014</div>

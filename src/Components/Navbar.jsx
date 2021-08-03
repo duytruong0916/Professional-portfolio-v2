@@ -88,7 +88,7 @@ function Navbar(props) {
             ))}
           <li class="resume">
             <a
-              href={resume}
+              href="https://www.linkedin.com/feed/"
               target="_blank"
               className="quote text-decoration-none"
             >
