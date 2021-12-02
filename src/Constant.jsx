@@ -274,12 +274,12 @@ const Constants = {
     },
     {
       name: "Facebook",
-      link: "https://www.facebook.com/nhatduy.truong.90",
+      link: "/google",
       icon: "fa fa-facebook icon",
     },
     {
       name: "Instagram",
-      link: "https://www.instagram.com/nhatduy.truong.90/",
+      link: "/google",
       icon: "fa fa-instagram icon",
     },
   ],
