@@ -133,6 +133,7 @@ const Constants = {
       name: "Brittswine.com",
       type: "CMS",
       tech: "PHP / Lumen / HTML & CSS",
+      link: "/projects/brittswine",
       summary:
         "A responsive and beautiful website developed for a restaurant in East Texas",
     },
@@ -158,6 +159,7 @@ const Constants = {
       name: "Rlacy.com",
       type: "CMS",
       tech: "Statamic 3 / Vue / HTML & CSS",
+      link: "/projects/lacy",
       summary:
         "A fully-responsive and well-designed website with a supportive CMS and cohesive layout developed for R.lacy in Longview Tx.",
     },

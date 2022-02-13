@@ -8,7 +8,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 AOS.init();
-
+// comment
 ReactDOM.render(
   <React.StrictMode>
     <StateProvider>
