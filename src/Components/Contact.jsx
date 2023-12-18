@@ -19,7 +19,7 @@ function Contact() {
     return (
         <div className="contact-wrapper">
             <div className="phone">Phone: 214-235-5014</div>
-            <div className="email">Email: duytruong169@gmail.com</div>
+            <div className="email">Email: tech.duytruong@gmail.com</div>
             <div className="quote">
                 I am available for hire and open to any ideas of cooperation.
                 </div>
