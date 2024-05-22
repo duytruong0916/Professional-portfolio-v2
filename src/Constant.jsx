@@ -17,7 +17,7 @@ const Constants = {
       "Global Payments Inc",
       "Encore Multimedia",
       "Aleph Technologies",
-      "FUJINET SYSTEMS JSC",
+      "Freelancer",
     ],
     data: [
       {
