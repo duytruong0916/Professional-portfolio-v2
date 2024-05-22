@@ -59,10 +59,10 @@ function About() {
       <Accordion.Collapse eventKey='0'>
         <div>
           <p>
-            Shortly after graduating from The University of Texas at Dallas, I
-            joined the engineering team at Encore Multimedia where I work on a
-            wide variety of interesting and meaningful projects on a daily
-            basis.
+            Aside from work, I am a father of a lovely daughter and a husband of
+            a beautiful wife. I love to spend time with my family, play soccer,
+            and watch movies. I also love to learn new things, especially
+            technology.
           </p>
           <div className=''>
             I can help you with the following sides of your project:

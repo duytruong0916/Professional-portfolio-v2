@@ -11,8 +11,40 @@ import dmi from "./assets/dmi/pc1.png";
 
 const Constants = {
   works: {
-    company: ["Global Payments Inc","Encore Multimedia", "Aleph Technologies", "FUJINET SYSTEMS JSC"],
+    company: [
+      "Amazon",
+      "Cognizant",
+      "Global Payments Inc",
+      "Encore Multimedia",
+      "Aleph Technologies",
+      "FUJINET SYSTEMS JSC",
+    ],
     data: [
+      {
+        company: "Amazon",
+        information: {
+          title: "Frontend Software Engineer",
+          location: "Austin, Texas.",
+          time: "08/2022 - Present",
+          description: [
+            "Played a crucial role in developing the Frontend for promotion widget during Prime Day event that was used by millions of users and generated millions in ",
+            "Maintained and implemented new features for the Merchant Console app, aiding users in the management of orders, products, and payments.",
+          ],
+        },
+      },
+      {
+        company: "Cognizant",
+        information: {
+          title: "Sr. Software Engineer",
+          location: "Dallas, Texas.",
+          time: "12/2021 - 08/2022",
+          description: [
+            "Developed the industry's premier enterprise-grade SaaS platform for shop management and sophisticated tools to help the automotive aftermarket thrive and grow",
+            "Collaborated with designers to verify the¬ frontend design.",
+            "Worked closely with backend engineers and product owner to build and ship moderately sized features and improvements.",
+          ],
+        },
+      },
       {
         company: "Global Payments Inc",
         information: {
@@ -20,10 +52,9 @@ const Constants = {
           location: "Atlanta, GA.",
           time: "6/2021 - Present",
           description: [
-            "Developed and tested the frontend of the application",
-            "Improved and optimized functionality and performance",
-            "Collaborated with designers to architect the frontend of the application.",
-            "Participated in code review",
+            "Developed and tested the frontend of a drag and drop tool for creating the decision tree that decides whether or not someone is approved for credit card.",
+            "Optimized functionality and performance of the application.",
+            "Collaborated with designers to architect the frontend of the application and participated in code review.",
           ],
         },
       },
@@ -73,28 +104,28 @@ const Constants = {
   },
   skills: [
     {
-      name: "JavaScript (ES6+)",
+      name: "TypeScript (ES6+)",
       rate: "90",
-    },
-    {
-      name: "HTML & (S)CSS",
-      rate: "90",
-    },
-    {
-      name: "Drupal (7+)",
-      rate: "70",
     },
     {
       name: "React",
-      rate: "80",
-    },
-    {
-      name: "Node.js",
-      rate: "60",
+      rate: "90",
     },
     {
       name: "Vue",
       rate: "50",
+    },
+    {
+      name: "Angular",
+      rate: "50",
+    },
+    {
+      name: "Node.js",
+      rate: "50",
+    },
+    {
+      name: "AWS",
+      rate: "70",
     },
   ],
 
